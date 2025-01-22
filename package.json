@@ -1,0 +1,33 @@
+{
+  "name": "b2b-address-contract",
+  "version": "1.0.0",
+  "description": "B2B Token Smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network optimism_sepolia",
+    "interact": "hardhat run scripts/interact.js --network optimism_sepolia",
+    "verify": "hardhat verify --network optimism_sepolia"
+  },
+  "keywords": [
+    "blockchain",
+    "smart-contract",
+    "erc20",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "@types/node": "^22.10.6",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.17.0",
+    "typescript": "^5.7.3"
+  }
+}

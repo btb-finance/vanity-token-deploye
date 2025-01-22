@@ -1,0 +1,25 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+.DS_Store
+
+# Hardhat files
+cache
+artifacts
+
+# Deployment files with sensitive info
+vanity-addresses.json
+deployments.json
+
+# IDE files
+.idea
+.vscode
+
+# Debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
