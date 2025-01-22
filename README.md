@@ -124,6 +124,176 @@ Our test deployments achieved the same address on multiple networks:
 
 For more detailed information about deploying with vanity addresses, check the [Vanity Address Deployment Guide](docs/VanityAddressDeployment.md).
 
+## Deployment and Verification Guide 🚀
+
+### 1. Deployment Commands
+
+Deploy to Base Sepolia:
+```bash
+npx hardhat run scripts/deployWithNonce.js --network base-sepolia
+```
+
+Deploy to OP Sepolia:
+```bash
+npx hardhat run scripts/deployWithNonce.js --network optimism-sepolia
+```
+
+### 2. Contract Verification Commands
+
+Verify on Base Sepolia:
+```bash
+npx hardhat verify --network base-sepolia CONTRACT_ADDRESS \
+    "btb" \
+    "btb" \
+    "0x6EDCE65403992e310A62460808c4b910D972f10f" \
+    "YOUR_DEPLOYER_ADDRESS" \
+    "1000000000000000000000000000" \
+    "11155420"
+```
+
+Verify on OP Sepolia:
+```bash
+npx hardhat verify --network optimism-sepolia CONTRACT_ADDRESS \
+    "btb" \
+    "btb" \
+    "0x6EDCE65403992e310A62460808c4b910D972f10f" \
+    "YOUR_DEPLOYER_ADDRESS" \
+    "1000000000000000000000000000" \
+    "11155420"
+```
+
+### Parameters Explained:
+- `CONTRACT_ADDRESS`: The deployed contract address
+- `"btb"`: Token name
+- `"btb"`: Token symbol
+- `"0x6EDCE65403992e310A62460808c4b910D972f10f"`: LayerZero endpoint
+- `"YOUR_DEPLOYER_ADDRESS"`: Your deployer wallet address
+- `"1000000000000000000000000000"`: Max supply (1 billion tokens with 18 decimals)
+- `"11155420"`: Main chain ID (OP Sepolia)
+
+### Example with Real Values:
+
+1. Base Sepolia Verification:
+```bash
+npx hardhat verify --network base-sepolia 0xAD72A833Cd7CaF39f91cdb02cDaCA66DCaF6f518 "btb" "btb" "0x6EDCE65403992e310A62460808c4b910D972f10f" "0x629455807f7AaacC41cBd486C635C1208993f3ee" "1000000000000000000000000000" "11155420"
+```
+
+2. OP Sepolia Verification:
+```bash
+npx hardhat verify --network optimism-sepolia 0x69e48964db9d320157009092a65632f6a4a2C38d "btb" "btb" "0x6EDCE65403992e310A62460808c4b910D972f10f" "0x629455807f7AaacC41cBd486C635C1208993f3ee" "1000000000000000000000000000" "11155420"
+```
+
+### Important Notes:
+1. Make sure you have enough native tokens (ETH) on both networks for deployment and verification
+2. Set your private key in the `.env` file
+3. Set the API keys in the `.env` file:
+   ```
+   BASE_API_KEY=your_base_api_key
+   OPTIMISM_API_KEY=your_optimism_api_key
+   ```
+4. The network names in the commands must match exactly: `base-sepolia` and `optimism-sepolia`
+
+### Deployed Contract Addresses:
+- Base Sepolia: `0xAD72A833Cd7CaF39f91cdb02cDaCA66DCaF6f518`
+- OP Sepolia: `0x69e48964db9d320157009092a65632f6a4a2C38d`
+
+## BTB Token Deployment Details 🚀
+
+### Deployed Contracts
+
+The BTB Token has been successfully deployed on multiple networks:
+
+1. **Base Sepolia**
+   - Contract Address: `0xBB2E2c8F0e2fec57e0D60F74d8a6D0FE41D8b00B`
+   - Network: Base Sepolia Testnet (Chain ID: 84532)
+   - LayerZero Endpoint: `0x6EDCE65403992e310A62460808c4b910D972f10f`
+
+2. **OP Sepolia**
+   - Contract Address: `0xCd26f595Dfc49AAB64ABDD5d75742e7506F5d1c5`
+   - Network: OP Sepolia Testnet (Chain ID: 11155420)
+   - LayerZero Endpoint: `0x6EDCE65403992e310A62460808c4b910D972f10f`
+
+### Token Details
+- Name: "btb"
+- Symbol: "btb"
+- Maximum Supply: 1,000,000,000 tokens
+- Decimals: 18
+
+### How to Deploy
+
+1. **Setup Environment**
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
+   cd vanity-token-deployer
+
+   # Install dependencies
+   npm install
+
+   # Create .env file with your private key
+   echo "PRIVATE_KEY=your_private_key_here" > .env
+   ```
+
+2. **Configure Networks**
+   The project is already configured for Base Sepolia and OP Sepolia in `hardhat.config.js`. Make sure you have test ETH on these networks.
+
+3. **Deploy to Base Sepolia**
+   ```bash
+   # Update the deployment script parameters in scripts/deployWithNonce.js
+   # Then run:
+   npx hardhat run scripts/deployWithNonce.js --network base_sepolia
+   ```
+
+4. **Deploy to OP Sepolia**
+   ```bash
+   # Update the deployment script parameters in scripts/deployWithNonce.js
+   # Then run:
+   npx hardhat run scripts/deployWithNonce.js --network optimism_sepolia
+   ```
+
+### Contract Verification
+You can verify the contracts on their respective block explorers:
+- Base Sepolia: https://sepolia.basescan.org/address/0xBB2E2c8F0e2fec57e0D60F74d8a6D0FE41D8b00B
+- OP Sepolia: https://sepolia-optimism.etherscan.io/address/0xCd26f595Dfc49AAB64ABDD5d75742e7506F5d1c5
+
+### Interacting with the Contracts
+
+You can interact with the deployed contracts using:
+
+1. **Block Explorers**
+   - Visit the contract addresses on the respective block explorers
+   - Use the "Write Contract" section to interact with contract functions
+
+2. **Hardhat Console**
+   ```javascript
+   // Example interaction using hardhat console
+   npx hardhat console --network base_sepolia
+   
+   // Get contract instance
+   const BTBToken = await ethers.getContractFactory("BTBToken")
+   const token = await BTBToken.attach("0xBB2E2c8F0e2fec57e0D60F74d8a6D0FE41D8b00B")
+   
+   // Check balance
+   const balance = await token.balanceOf("your_address_here")
+   ```
+
+3. **Web3.js/Ethers.js**
+   ```javascript
+   // Example using ethers.js
+   const provider = new ethers.providers.JsonRpcProvider("YOUR_RPC_URL")
+   const signer = new ethers.Wallet("YOUR_PRIVATE_KEY", provider)
+   const token = new ethers.Contract(TOKEN_ADDRESS, TOKEN_ABI, signer)
+   ```
+
+### Gas Settings
+
+The deployment uses the following gas settings for optimal deployment:
+- Gas Limit: 5,000,000
+- Max Fee Per Gas: 1.5 gwei
+- Max Priority Fee: 1.5 gwei
+
+These settings are configured in the deployment script and can be adjusted if needed.
+
 ## Credits
 
 ### Developed by BTB Finance Team

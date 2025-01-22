@@ -125,13 +125,18 @@ async function main() {
                 const vanityFile = path.join(__dirname, '..', 'vanity-addresses.json');
                 
                 try {
-                    const data = require(vanityFile);
+                    let data = {};
+                    if (fs.existsSync(vanityFile)) {
+                        data = require(vanityFile);
+                    }
+                    
                     const timestamp = new Date().toISOString();
                     
                     data[`vanity_${config.prefix}_${config.suffix}`] = {
                         pattern: `${config.prefix}****${config.suffix}`,
                         privateKey: message.wallet.privateKey,
-                        address: message.contractAddress,
+                        deployerAddress: message.wallet.address,
+                        contractAddress: message.contractAddress,
                         description: `Vanity contract address (starts with ${config.prefix} and ends with ${config.suffix})`,
                         createdAt: timestamp.split('T')[0],
                         generator: 'scripts/findVanityAddressParallel.js'

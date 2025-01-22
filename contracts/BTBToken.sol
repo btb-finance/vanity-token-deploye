@@ -1,26 +1,28 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.22;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+import { OFT } from "@layerzerolabs/oft-evm/contracts/OFT.sol";
 
-contract BTBToken is ERC20, Ownable {
-    uint8 private _decimals = 18;
-    uint256 private _initialSupply = 1000000 * (10 ** _decimals); // 1 million tokens
+contract BTBToken is OFT {
+    uint256 public immutable MAX_SUPPLY;
+    uint256 public immutable MAIN_CHAIN_ID;
 
-    constructor() ERC20("BTB Token", "BTB") {
-        _mint(msg.sender, _initialSupply);
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        address _lzEndpoint,
+        address _delegate,
+        uint256 _maxSupply,
+        uint256 _mainChainId
+    ) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
+        MAX_SUPPLY = _maxSupply;
+        MAIN_CHAIN_ID = _mainChainId;
+
+        // Mint supply only on the main chain
+        if (block.chainid == MAIN_CHAIN_ID) {
+            _mint(_delegate, MAX_SUPPLY);
+        }
     }
 
-    function decimals() public view virtual override returns (uint8) {
-        return _decimals;
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
-
-    function burn(uint256 amount) public {
-        _burn(msg.sender, amount);
-    }
 }

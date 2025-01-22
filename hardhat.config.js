@@ -1,22 +1,56 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("@openzeppelin/hardhat-upgrades");
+require('dotenv').config();
 
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.20",
-  networks: {
-    base_sepolia: {
-      url: "https://sepolia.base.org",
-      accounts: ["0xaffd9ef1da30f34e7da1009fffb5a342b845ad1b3e61061d2775b8e718ff227e"],
-      chainId: 84532,
-      gasMultiplier: 8,
-      timeout: 300000
-    },
-    optimism_sepolia: {
-      url: "https://sepolia.optimism.io",
-      accounts: ["0xaffd9ef1da30f34e7da1009fffb5a342b845ad1b3e61061d2775b8e718ff227e"],
-      chainId: 11155420,
-      gasMultiplier: 8,
-      timeout: 300000
+  solidity: {
+    version: "0.8.22",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
     }
+  },
+  networks: {
+    "optimism-sepolia": {
+      url: "https://sepolia.optimism.io",
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 11155420,
+      gasPrice: 1000000000, // 1 gwei
+      gas: 10000000, // 10M
+      blockGasLimit: 15000000,
+      gasMultiplier: 1.2
+    },
+    "base-sepolia": {
+      url: "https://base-sepolia-rpc.publicnode.com",
+      accounts: [process.env.PRIVATE_KEY || "0000000000000000000000000000000000000000000000000000000000000000"],
+      chainId: 84532,
+      gasMultiplier: 1.2
+    }
+  },
+  etherscan: {
+    apiKey: {
+      "base-sepolia": process.env.BASE_API_KEY,
+      "optimism-sepolia": process.env.OPTIMISM_API_KEY
+    },
+    customChains: [
+      {
+        network: "base-sepolia",
+        chainId: 84532,
+        urls: {
+          apiURL: "https://api-sepolia.basescan.org/api",
+          browserURL: "https://sepolia.basescan.org"
+        }
+      },
+      {
+        network: "optimism-sepolia",
+        chainId: 11155420,
+        urls: {
+          apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+          browserURL: "https://sepolia-optimism.etherscan.io/"
+        }
+      }
+    ]
   }
 };
