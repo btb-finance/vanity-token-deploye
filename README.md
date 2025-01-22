@@ -123,3 +123,31 @@ Our test deployments achieved the same address on multiple networks:
    - Ensure RPC endpoints are reliable
 
 For more detailed information about deploying with vanity addresses, check the [Vanity Address Deployment Guide](docs/VanityAddressDeployment.md).
+
+## Credits
+
+### Developed by BTB Finance Team
+
+<div align="center">
+   <a href="https://www.btb.finance" target="_blank">
+      <img src="https://img.shields.io/badge/BTB_Finance-Website-blue?style=for-the-badge&logo=ethereum" alt="BTB Finance Website" />
+   </a>
+   <a href="https://twitter.com/btb_finance" target="_blank">
+      <img src="https://img.shields.io/badge/Follow-btb__finance-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Follow on Twitter" />
+   </a>
+</div>
+
+<div align="center">
+   <p>
+      Built with 💙 by the <a href="https://www.btb.finance">BTB Finance</a> team.<br>
+      Making DeFi deployment easier, one address at a time.
+   </p>
+</div>
+
+---
+
+<div align="center">
+   <sub>
+      If you find this tool useful, follow us on <a href="https://twitter.com/btb_finance">Twitter</a> for more updates!
+   </sub>
+</div>
