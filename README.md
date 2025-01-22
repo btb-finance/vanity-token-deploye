@@ -1,6 +1,33 @@
-# Vanity Address Token Deployer
+# Vanity Token Deployer
 
-A tool for deploying ERC20 tokens with vanity addresses across multiple networks. Deploy your token with a custom address pattern on any EVM-compatible network.
+> 🎯 Deploy ERC20 tokens with custom vanity addresses across multiple EVM networks. Achieve the same contract address on every chain!
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?logo=ethereum&logoColor=white)](https://ethereum.org/)
+[![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg)](https://hardhat.org/)
+[![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4)](https://www.openzeppelin.com/)
+
+## About 📚
+
+**Vanity Token Deployer** is a powerful toolkit for deploying smart contracts with customizable vanity addresses across multiple EVM-compatible networks. Whether you're launching a token on Ethereum, Optimism, Base, or any other EVM chain, this tool ensures your contract gets the same memorable address everywhere.
+
+### Key Features 🔑
+
+- 🎯 **Custom Vanity Addresses**: Deploy contracts with addresses matching your desired pattern
+- 🔄 **Cross-Chain Consistency**: Same contract address across different networks
+- ⚡ **Parallel Processing**: Fast vanity address generation using multi-threading
+- 🔍 **Nonce Management**: Automatic handling of deployment nonces
+- 📊 **Deployment Tracking**: Keep track of all your deployments across networks
+- 🔒 **Security Focused**: Built-in safety checks and best practices
+
+### Perfect For 🎯
+
+- 🏢 **Projects** deploying tokens across multiple chains
+- 🎨 **Brands** wanting memorable contract addresses
+- 🛠️ **Developers** needing predictable contract deployment
+- 🔄 **DeFi protocols** requiring same addresses across networks
+
+---
 
 ## Features
 
