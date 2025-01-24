@@ -194,8 +194,8 @@ npx hardhat verify --network optimism-sepolia 0x69e48964db9d320157009092a65632f6
 4. The network names in the commands must match exactly: `base-sepolia` and `optimism-sepolia`
 
 ### Deployed Contract Addresses:
-- Base Sepolia: `0xAD72A833Cd7CaF39f91cdb02cDaCA66DCaF6f518`
-- OP Sepolia: `0x69e48964db9d320157009092a65632f6a4a2C38d`
+- Base Sepolia: `0xB007DC5738a8789DadB6861745f1bDfBc1400C6B`
+- OP Sepolia: `0xB007DC5738a8789DadB6861745f1bDfBc1400C6B`
 
 ### Fixed Issues 🛠️
 - Fixed network deployment confusion between Base and OP Sepolia networks
