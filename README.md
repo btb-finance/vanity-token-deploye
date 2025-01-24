@@ -197,6 +197,11 @@ npx hardhat verify --network optimism-sepolia 0x69e48964db9d320157009092a65632f6
 - Base Sepolia: `0xAD72A833Cd7CaF39f91cdb02cDaCA66DCaF6f518`
 - OP Sepolia: `0x69e48964db9d320157009092a65632f6a4a2C38d`
 
+### Fixed Issues 🛠️
+- Fixed network deployment confusion between Base and OP Sepolia networks
+- Improved gas estimation and transaction handling
+- Enhanced nonce management across different networks
+
 ## BTB Token Deployment Details 🚀
 
 ### Deployed Contracts

@@ -6,10 +6,21 @@ async function getCurrentNonce(deployer) {
 }
 
 async function deployToNetwork(networkName, lzEndpoint, chainId) {
+    // Verify network connection
+    const network = await ethers.provider.getNetwork();
+    console.log(`Connected to network with chainId: ${network.chainId}`);
+
     const [wallet] = await ethers.getSigners();
     console.log(`\nDeploying to ${networkName}...`);
     console.log("Deployer address:", wallet.address);
     
+    // Verify wallet balance
+    const balance = await wallet.getBalance();
+    if (balance.isZero()) {
+        throw new Error(`Insufficient balance in wallet: ${wallet.address}`);
+    }
+    console.log(`Wallet balance: ${ethers.utils.formatEther(balance)} ETH`);
+
     // Get current nonce
     const currentNonce = await ethers.provider.getTransactionCount(wallet.address);
     console.log(`Current nonce: ${currentNonce}`);
@@ -47,14 +58,19 @@ async function deployToNetwork(networkName, lzEndpoint, chainId) {
         mainChainId
     );
 
-    // Set gas settings
-    deploymentTx.gasLimit = ethers.BigNumber.from("5000000");
-    deploymentTx.maxFeePerGas = ethers.utils.parseUnits("1.5", "gwei");
-    deploymentTx.maxPriorityFeePerGas = ethers.utils.parseUnits("1.5", "gwei");
+    // Estimate gas and get current gas prices
+    const gasLimit = await ethers.provider.estimateGas(deploymentTx);
+    const feeData = await ethers.provider.getFeeData();
+
+    // Set gas settings with 20% buffer
+    deploymentTx.gasLimit = gasLimit.mul(120).div(100);
+    deploymentTx.maxFeePerGas = feeData.maxFeePerGas.mul(120).div(100);
+    deploymentTx.maxPriorityFeePerGas = feeData.maxPriorityFeePerGas.mul(120).div(100);
     deploymentTx.nonce = currentNonce;
 
     console.log("Gas Settings:");
-    console.log("Gas Limit:", deploymentTx.gasLimit.toString());
+    console.log("Estimated Gas Limit:", gasLimit.toString());
+    console.log("Gas Limit with buffer:", deploymentTx.gasLimit.toString());
     console.log("Max Fee Per Gas:", ethers.utils.formatUnits(deploymentTx.maxFeePerGas, "gwei"), "gwei");
     console.log("Max Priority Fee:", ethers.utils.formatUnits(deploymentTx.maxPriorityFeePerGas, "gwei"), "gwei");
 
@@ -80,23 +96,40 @@ async function deployToNetwork(networkName, lzEndpoint, chainId) {
 }
 
 async function main() {
+    const network = await ethers.provider.getNetwork();
     const mainChainId = 11155420; // OP Sepolia Chain ID for both deployments
 
-    // Deploy to Base Sepolia first
-    console.log("\n1. Deploying to Base Sepolia with OP Sepolia as main chain...");
-    await deployToNetwork(
-        "Base Sepolia",
-        "0x6EDCE65403992e310A62460808c4b910D972f10f", // Base Sepolia LZ Endpoint
-        mainChainId // Using OP Sepolia as main chain
-    );
+    // Network-specific configurations
+    const networks = {
+        "base-sepolia": {
+            chainId: 84532,
+            name: "Base Sepolia",
+            lzEndpoint: "0x6EDCE65403992e310A62460808c4b910D972f10f"
+        },
+        "optimism-sepolia": {
+            chainId: 11155420,
+            name: "OP Sepolia",
+            lzEndpoint: "0x6EDCE65403992e310A62460808c4b910D972f10f"
+        }
+    };
 
-    // Deploy to OP Sepolia second
-    console.log("\n2. Deploying to OP Sepolia...");
-    await deployToNetwork(
-        "OP Sepolia",
-        "0x6EDCE65403992e310A62460808c4b910D972f10f", // OP Sepolia LZ Endpoint
-        mainChainId
-    );
+    // Get current network configuration
+    const currentNetwork = Object.values(networks).find(n => n.chainId === network.chainId);
+    if (!currentNetwork) {
+        throw new Error(`Unsupported network. Connected to chain ID: ${network.chainId}`);
+    }
+
+    console.log(`\nDeploying to ${currentNetwork.name}...`);
+    try {
+        await deployToNetwork(
+            currentNetwork.name,
+            currentNetwork.lzEndpoint,
+            mainChainId
+        );
+    } catch (error) {
+        console.error(`\nDeployment failed:`, error);
+        process.exit(1);
+    }
 }
 
 main()
