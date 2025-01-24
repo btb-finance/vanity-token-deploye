@@ -209,14 +209,24 @@ npx hardhat verify --network optimism-sepolia 0x69e48964db9d320157009092a65632f6
 The BTB Token has been successfully deployed on multiple networks:
 
 1. **Base Sepolia**
-   - Contract Address: `0xBB2E2c8F0e2fec57e0D60F74d8a6D0FE41D8b00B`
-   - Network: Base Sepolia Testnet (Chain ID: 84532)
-   - LayerZero Endpoint: `0x6EDCE65403992e310A62460808c4b910D972f10f`
+   - Contract Address: `0xB007DC5738a8789DadB6861745f1bDfBc1400C6B`
+  "Base-Sepolia-Testnet": {
+    "nativeChainId": 84532,
+    "eid": "40245",
+    "executor": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+    "endpointV2": "0x6EDCE65403992e310A62460808c4b910D972f10f",
+    ...
+}
 
 2. **OP Sepolia**
-   - Contract Address: `0xCd26f595Dfc49AAB64ABDD5d75742e7506F5d1c5`
-   - Network: OP Sepolia Testnet (Chain ID: 11155420)
-   - LayerZero Endpoint: `0x6EDCE65403992e310A62460808c4b910D972f10f`
+   - Contract Address: `0xB007DC5738a8789DadB6861745f1bDfBc1400C6B`
+   "Optimism-Sepolia-Testnet": {
+    "nativeChainId": 11155420,
+    "eid": "40232",
+    "executor": "0x718B92b5CB0a5552039B593faF724D182A881eDA",
+    "endpointV2": "0x6EDCE65403992e310A62460808c4b910D972f10f",
+    ...
+}
 
 ### Token Details
 - Name: "btb"

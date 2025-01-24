@@ -10,8 +10,8 @@ async function main() {
     const optimismContractAddress = "0xb007dc5738a8789dadb6861745f1bdfbc1400c6b";
 
     // Chain IDs for LayerZero
-    const BASE_SEPOLIA_EID = 10160;     // Base Sepolia Endpoint ID
-    const OP_SEPOLIA_EID = 10132;       // Optimism Sepolia Endpoint ID
+    const BASE_SEPOLIA_EID = 40245;     // Base Sepolia Endpoint ID
+    const OP_SEPOLIA_EID = 40232;       // Optimism Sepolia Endpoint ID
 
     // Get contract factory
     const BTBToken = await ethers.getContractFactory("BTBToken");
