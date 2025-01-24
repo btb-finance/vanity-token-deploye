@@ -326,3 +326,24 @@ These settings are configured in the deployment script and can be adjusted if ne
       If you find this tool useful, follow us on <a href="https://twitter.com/btb_finance">Twitter</a> for more updates!
    </sub>
 </div>
+
+### 3. Setting Up Cross-Chain Peers
+After deploying the contracts on both networks, you need to set up the peers to enable cross-chain functionality between Base Sepolia and Optimism Sepolia.
+
+First, ensure you have the contract addresses from both deployments. Then run the setPeer script for each network:
+
+```bash
+# Set peer on Optimism Sepolia
+npx hardhat run scripts/setPeers.js --network optimism-sepolia
+
+# Set peer on Base Sepolia
+npx hardhat run scripts/setPeers.js --network base-sepolia
+```
+
+The script will:
+1. Connect to the specified network
+2. Set up the peer relationship with the corresponding contract on the other network
+3. Use the correct LayerZero Endpoint IDs (Base Sepolia: 10160, OP Sepolia: 10132)
+4. Add a 20% buffer to the estimated gas to ensure transaction success
+
+After successful execution, the contracts will be properly linked and ready for cross-chain operations.
