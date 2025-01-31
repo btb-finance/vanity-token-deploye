@@ -38,10 +38,19 @@ Set up deployer wallet/account:
 
 - Rename `.env.example` -> `.env`
 - Choose your preferred means of setting up your deployer wallet/account:
+  Paste this in your .env and add your API keys
+# Environment configuration for LayerZero deployment
 
-```
+# Authentication (choose one)
+PRIVATE_KEY=""
 
+# API Keys for verification
+BASE_API_KEY=""
+OPTIMISM_API_KEY=""
 
+# RPC URLs for testnets
+RPC_URL_BASE_SEPOLIA="https://sepolia.base.org"
+RPC_URL_OPTIMISM_SEPOLIA="https://sepolia.optimism.io"
 
 
 ```bash
