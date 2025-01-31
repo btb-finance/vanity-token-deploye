@@ -83,3 +83,45 @@ npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
 <p align="center">
   Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
 </p>
+
+## Send Msg
+
+
+
+
+```bash
+npx hardhat sendMessage --network optimism sepolia --dst-network base sepolia --message "Hello Omnichain World (sent from OP)"
+```
+
+> [!NOTE]
+> You may need to change the contract name if you're deploying multiple OFT contracts on different chains (e.g., OFT and OFT Adapter).
+
+<br>
+
+
+
+<p align="center">
+  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
+</p>
+
+## Send Tokens from on network to another
+
+
+
+
+```bash
+npx hardhat run scripts/sendTokens.ts --network optimism-sepolia
+```
+
+> [!NOTE]
+> It will give a transaction on layerzeroscan-testnet check this hash on scan and wait 3 hours for complete the transaction from source to destination.
+
+<br>
+
+
+
+<p align="center">
+  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
+</p>
+
+
