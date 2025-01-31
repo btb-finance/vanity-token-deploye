@@ -1,0 +1,366 @@
+{
+  "address": "0xda7808058CbF216494Ec45df7925CF4Bc942780E",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_layerZeroEndpoint",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "pings",
+          "type": "uint256"
+        }
+      ],
+      "name": "Ping",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "disable",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "endpoint",
+      "outputs": [
+        {
+          "internalType": "contract ILayerZeroEndpoint",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_srcChainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_srcAddress",
+          "type": "bytes"
+        }
+      ],
+      "name": "forceResumeReceive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_chainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_configType",
+          "type": "uint256"
+        }
+      ],
+      "name": "getConfig",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReceiveVersion",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSendVersion",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_srcChainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_fromAddress",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_payload",
+          "type": "bytes"
+        }
+      ],
+      "name": "lzReceive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxPings",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numPings",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_dstChainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "_dstPingPongAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pings",
+          "type": "uint256"
+        }
+      ],
+      "name": "ping",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pingsEnabled",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_dstChainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_configType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_config",
+          "type": "bytes"
+        }
+      ],
+      "name": "setConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "version",
+          "type": "uint16"
+        }
+      ],
+      "name": "setReceiveVersion",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "version",
+          "type": "uint16"
+        }
+      ],
+      "name": "setSendVersion",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0xe32de5d01ed1294d0c9798df45191e8a158255cdae3d82c87d8ee7d835e792d8",
+  "receipt": {
+    "to": null,
+    "from": "0xc13b65f7c53Cd6db2EA205a4b574b4a0858720A6",
+    "contractAddress": "0xda7808058CbF216494Ec45df7925CF4Bc942780E",
+    "transactionIndex": 3,
+    "gasUsed": "1142600",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x2c5cffae5a32da984b49f15caca8586c073d9f891b7a3b9cea70bf2c96bba511",
+    "transactionHash": "0xe32de5d01ed1294d0c9798df45191e8a158255cdae3d82c87d8ee7d835e792d8",
+    "logs": [],
+    "blockNumber": 7857610,
+    "cumulativeGasUsed": "1413863",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x93f54D755A063cE7bB9e6Ac47Eccc8e33411d706"
+  ],
+  "numDeployments": 2,
+  "solcInputHash": "191256a60eaf0ca67de509f7a44f428a",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_layerZeroEndpoint\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"pings\",\"type\":\"uint256\"}],\"name\":\"Ping\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"disable\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"endpoint\",\"outputs\":[{\"internalType\":\"contract ILayerZeroEndpoint\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_srcChainId\",\"type\":\"uint16\"},{\"internalType\":\"bytes\",\"name\":\"_srcAddress\",\"type\":\"bytes\"}],\"name\":\"forceResumeReceive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"_chainId\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_configType\",\"type\":\"uint256\"}],\"name\":\"getConfig\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getReceiveVersion\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSendVersion\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_srcChainId\",\"type\":\"uint16\"},{\"internalType\":\"bytes\",\"name\":\"_fromAddress\",\"type\":\"bytes\"},{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"},{\"internalType\":\"bytes\",\"name\":\"_payload\",\"type\":\"bytes\"}],\"name\":\"lzReceive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxPings\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numPings\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_dstChainId\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"_dstPingPongAddr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"pings\",\"type\":\"uint256\"}],\"name\":\"ping\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pingsEnabled\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"_dstChainId\",\"type\":\"uint16\"},{\"internalType\":\"uint256\",\"name\":\"_configType\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_config\",\"type\":\"bytes\"}],\"name\":\"setConfig\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"version\",\"type\":\"uint16\"}],\"name\":\"setReceiveVersion\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"version\",\"type\":\"uint16\"}],\"name\":\"setSendVersion\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/PingPong.sol\":\"PingPong\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":30000},\"remappings\":[]},\"sources\":{\"contracts/interfaces/ILayerZeroEndpoint.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity >=0.5.0;\\n\\nimport \\\"./ILayerZeroUserApplicationConfig.sol\\\";\\n\\ninterface ILayerZeroEndpoint is ILayerZeroUserApplicationConfig {\\n    // @notice send a LayerZero message to the specified address at a LayerZero endpoint.\\n    // @param _dstChainId - the destination chain identifier\\n    // @param _destination - the address on destination chain (in bytes). address length/format may vary by chains\\n    // @param _payload - a custom bytes payload to send to the destination contract\\n    // @param _refundAddress - if the source transaction is cheaper than the amount of value passed, refund the additional amount to this address\\n    // @param _zroPaymentAddress - the address of the ZRO token holder who would pay for the transaction\\n    // @param _adapterParams - parameters for custom functionality. e.g. receive airdropped native gas from the relayer on destination\\n    function send(uint16 _dstChainId, bytes calldata _destination, bytes calldata _payload, address payable _refundAddress, address _zroPaymentAddress, bytes calldata _adapterParams) external payable;\\n\\n    // @notice used by the messaging library to publish verified payload\\n    // @param _srcChainId - the source chain identifier\\n    // @param _srcAddress - the source contract (as bytes) at the source chain\\n    // @param _dstAddress - the address on destination chain\\n    // @param _nonce - the unbound message ordering nonce\\n    // @param _gasLimit - the gas limit for external contract execution\\n    // @param _payload - verified payload to send to the destination contract\\n    function receivePayload(uint16 _srcChainId, bytes calldata _srcAddress, address _dstAddress, uint64 _nonce, uint _gasLimit, bytes calldata _payload) external;\\n\\n    // @notice get the inboundNonce of a receiver from a source chain which could be EVM or non-EVM chain\\n    // @param _srcChainId - the source chain identifier\\n    // @param _srcAddress - the source chain contract address\\n    function getInboundNonce(uint16 _srcChainId, bytes calldata _srcAddress) external view returns (uint64);\\n\\n    // @notice get the outboundNonce from this source chain which, consequently, is always an EVM\\n    // @param _srcAddress - the source chain contract address\\n    function getOutboundNonce(uint16 _dstChainId, address _srcAddress) external view returns (uint64);\\n\\n    // @notice gets a quote in source native gas, for the amount that send() requires to pay for message delivery\\n    // @param _dstChainId - the destination chain identifier\\n    // @param _userApplication - the user app address on this EVM chain\\n    // @param _payload - the custom message to send over LayerZero\\n    // @param _payInZRO - if false, user app pays the protocol fee in native token\\n    // @param _adapterParam - parameters for the adapter service, e.g. send some dust native token to dstChain\\n    function estimateFees(uint16 _dstChainId, address _userApplication, bytes calldata _payload, bool _payInZRO, bytes calldata _adapterParam) external view returns (uint nativeFee, uint zroFee);\\n\\n    // @notice get this Endpoint's immutable source identifier\\n    function getChainId() external view returns (uint16);\\n\\n    // @notice the interface to retry failed message on this Endpoint destination\\n    // @param _srcChainId - the source chain identifier\\n    // @param _srcAddress - the source chain contract address\\n    // @param _payload - the payload to be retried\\n    function retryPayload(uint16 _srcChainId, bytes calldata _srcAddress, bytes calldata _payload) external;\\n\\n    // @notice query if any STORED payload (message blocking) at the endpoint.\\n    // @param _srcChainId - the source chain identifier\\n    // @param _srcAddress - the source chain contract address\\n    function hasStoredPayload(uint16 _srcChainId, bytes calldata _srcAddress) external view returns (bool);\\n\\n    // @notice query if the _libraryAddress is valid for sending msgs.\\n    // @param _userApplication - the user app address on this EVM chain\\n    function getSendLibraryAddress(address _userApplication) external view returns (address);\\n\\n    // @notice query if the _libraryAddress is valid for receiving msgs.\\n    // @param _userApplication - the user app address on this EVM chain\\n    function getReceiveLibraryAddress(address _userApplication) external view returns (address);\\n\\n    // @notice query if the non-reentrancy guard for send() is on\\n    // @return true if the guard is on. false otherwise\\n    function isSendingPayload() external view returns (bool);\\n\\n    // @notice query if the non-reentrancy guard for receive() is on\\n    // @return true if the guard is on. false otherwise\\n    function isReceivingPayload() external view returns (bool);\\n\\n    // @notice get the configuration of the LayerZero messaging library of the specified version\\n    // @param _version - messaging library version\\n    // @param _chainId - the chainId for the pending config change\\n    // @param _userApplication - the contract address of the user application\\n    // @param _configType - type of configuration. every messaging library has its own convention.\\n    function getConfig(uint16 _version, uint16 _chainId, address _userApplication, uint _configType) external view returns (bytes memory);\\n\\n    // @notice get the send() LayerZero messaging library version\\n    // @param _userApplication - the contract address of the user application\\n    function getSendVersion(address _userApplication) external view returns (uint16);\\n\\n    // @notice get the lzReceive() LayerZero messaging library version\\n    // @param _userApplication - the contract address of the user application\\n    function getReceiveVersion(address _userApplication) external view returns (uint16);\\n}\\n\",\"keccak256\":\"0xbc2e0022d4d53d136830aa90037be2ed7a0966f5fd1b409bf5986185984c495f\",\"license\":\"BUSL-1.1\"},\"contracts/interfaces/ILayerZeroReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity >=0.5.0;\\n\\ninterface ILayerZeroReceiver {\\n    // @notice LayerZero endpoint will invoke this function to deliver the message on the destination\\n    // @param _srcChainId - the source endpoint identifier\\n    // @param _srcAddress - the source sending contract address from the source chain\\n    // @param _nonce - the ordered message nonce\\n    // @param _payload - the signed payload is the UA bytes has encoded to be sent\\n    function lzReceive(uint16 _srcChainId, bytes calldata _srcAddress, uint64 _nonce, bytes calldata _payload) external;\\n}\\n\",\"keccak256\":\"0xd1617e455d90d41556bba636bc440627d301ec481de16ff04fbd520333c3c6f3\",\"license\":\"BUSL-1.1\"},\"contracts/interfaces/ILayerZeroUserApplicationConfig.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity >=0.5.0;\\n\\ninterface ILayerZeroUserApplicationConfig {\\n    // @notice set the configuration of the LayerZero messaging library of the specified version\\n    // @param _version - messaging library version\\n    // @param _chainId - the chainId for the pending config change\\n    // @param _configType - type of configuration. every messaging library has its own convention.\\n    // @param _config - configuration in the bytes. can encode arbitrary content.\\n    function setConfig(uint16 _version, uint16 _chainId, uint _configType, bytes calldata _config) external;\\n\\n    // @notice set the send() LayerZero messaging library version to _version\\n    // @param _version - new messaging library version\\n    function setSendVersion(uint16 _version) external;\\n\\n    // @notice set the lzReceive() LayerZero messaging library version to _version\\n    // @param _version - new messaging library version\\n    function setReceiveVersion(uint16 _version) external;\\n\\n    // @notice Only when the UA needs to resume the message flow in blocking mode and clear the stored payload\\n    // @param _srcChainId - the chainId of the source chain\\n    // @param _srcAddress - the contract address of the source contract at the source chain\\n    function forceResumeReceive(uint16 _srcChainId, bytes calldata _srcAddress) external;\\n}\\n\",\"keccak256\":\"0xdc7e072cf3064081a8edf4a286ca43ddecc24330f2923d96f416f9d3f6538447\",\"license\":\"BUSL-1.1\"},\"contracts/mocks/PingPong.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\n//\\n// Note: you will need to fund each deployed contract with gas\\n//\\n// PingPong sends a LayerZero message back and forth between chains until stopped!\\n//\\n// Demonstrates:\\n//  1. a recursive feature of calling send() from inside lzReceive()\\n//  2. how to `estimateFees` for a send()'ing a LayerZero message\\n//  3. the contract pays the message fee\\n\\npragma solidity ^0.7.6;\\npragma abicoder v2;\\nimport \\\"../interfaces/ILayerZeroReceiver.sol\\\";\\nimport \\\"../interfaces/ILayerZeroEndpoint.sol\\\";\\nimport \\\"../interfaces/ILayerZeroUserApplicationConfig.sol\\\";\\n\\ncontract PingPong is ILayerZeroReceiver, ILayerZeroUserApplicationConfig {\\n    // the LayerZero endpoint calls .send() to send a cross chain message\\n    ILayerZeroEndpoint public endpoint;\\n    // whether PingPong is ping-ponging\\n    bool public pingsEnabled;\\n    // event emitted every ping() to keep track of consecutive pings count\\n    event Ping(uint pings);\\n    // the maxPings before ending the loop\\n    uint public maxPings;\\n    // keep track of the totalPings sent\\n    uint public numPings;\\n\\n    // constructor requires the LayerZero endpoint for this chain\\n    constructor(address _layerZeroEndpoint) {\\n        pingsEnabled = true;\\n        endpoint = ILayerZeroEndpoint(_layerZeroEndpoint);\\n        maxPings = 5;\\n    }\\n\\n    // disable ping-ponging\\n    function disable() external {\\n        pingsEnabled = false;\\n    }\\n\\n    // pings the destination chain, along with the current number of pings sent\\n    function ping(\\n        uint16 _dstChainId, // send a ping to this destination chainId\\n        address _dstPingPongAddr, // destination address of PingPong contract\\n        uint pings // the uint to start at. use 0 as a default\\n    ) public {\\n        require(address(this).balance > 0, \\\"the balance of this contract is 0. pls send gas for message fees\\\");\\n        require(pingsEnabled, \\\"pingsEnabled is false. messages stopped\\\");\\n        require(maxPings > pings, \\\"maxPings has been reached, no more looping\\\");\\n\\n        emit Ping(pings);\\n\\n        // abi.encode() the payload with the number of pings sent\\n        bytes memory payload = abi.encode(pings);\\n\\n        // encode adapterParams to specify more gas for the destination\\n        uint16 version = 1;\\n        uint gasForDestinationLzReceive = 350000;\\n        bytes memory adapterParams = abi.encodePacked(version, gasForDestinationLzReceive);\\n\\n        // get the fees we need to pay to LayerZero + Relayer to cover message delivery\\n        // see Communicator.sol's .estimateNativeFees() function for more details.\\n        (uint messageFee, ) = endpoint.estimateFees(_dstChainId, address(this), payload, false, adapterParams);\\n        require(address(this).balance >= messageFee, \\\"address(this).balance < messageFee. pls send gas for message fees\\\");\\n\\n        // send LayerZero message\\n        endpoint.send{value: messageFee}( // {value: messageFee} will be paid out of this contract!\\n            _dstChainId, // destination chainId\\n            abi.encodePacked(_dstPingPongAddr), // destination address of PingPong\\n            payload, // abi.encode()'ed bytes\\n            payable(this), // (msg.sender will be this contract) refund address (LayerZero will refund any extra gas back to caller of send()\\n            address(0x0), // 'zroPaymentAddress' unused for this mock/example\\n            adapterParams // 'adapterParams' unused for this mock/example\\n        );\\n    }\\n\\n    // receive the bytes payload from the source chain via LayerZero\\n    // _srcChainId: the chainId that we are receiving the message from.\\n    // _fromAddress: the source PingPong address\\n    function lzReceive(\\n        uint16 _srcChainId,\\n        bytes memory _fromAddress,\\n        uint64, /*_nonce*/\\n        bytes memory _payload\\n    ) external override {\\n        require(msg.sender == address(endpoint)); // boilerplate! lzReceive must be called by the endpoint for security\\n\\n        // use assembly to extract the address from the bytes memory parameter\\n        address fromAddress;\\n        assembly {\\n            fromAddress := mload(add(_fromAddress, 20))\\n        }\\n\\n        // decode the number of pings sent thus far\\n        uint pings = abi.decode(_payload, (uint));\\n\\n        // \\\"recursively\\\" call ping in order to *pong*     (and increment pings)\\n        ++pings;\\n        numPings = pings;\\n\\n        ping(_srcChainId, fromAddress, pings);\\n    }\\n\\n    function setConfig(\\n        uint16, /*_version*/\\n        uint16 _dstChainId,\\n        uint _configType,\\n        bytes memory _config\\n    ) external override {\\n        endpoint.setConfig(_dstChainId, endpoint.getSendVersion(address(this)), _configType, _config);\\n    }\\n\\n    function getConfig(\\n        uint16, /*_dstChainId*/\\n        uint16 _chainId,\\n        address,\\n        uint _configType\\n    ) external view returns (bytes memory) {\\n        return endpoint.getConfig(endpoint.getSendVersion(address(this)), _chainId, address(this), _configType);\\n    }\\n\\n    function setSendVersion(uint16 version) external override {\\n        endpoint.setSendVersion(version);\\n    }\\n\\n    function setReceiveVersion(uint16 version) external override {\\n        endpoint.setReceiveVersion(version);\\n    }\\n\\n    function getSendVersion() external view returns (uint16) {\\n        return endpoint.getSendVersion(address(this));\\n    }\\n\\n    function getReceiveVersion() external view returns (uint16) {\\n        return endpoint.getReceiveVersion(address(this));\\n    }\\n\\n    function forceResumeReceive(uint16 _srcChainId, bytes calldata _srcAddress) external override {\\n        // do nth\\n    }\\n\\n    // allow this contract to receive ether\\n    fallback() external payable {}\\n\\n    receive() external payable {}\\n}\\n\",\"keccak256\":\"0xa554fb6f0a6a0894a3e0170a716d7755a2ffd6b5cb76d10c5f60cfa9d4ed43c4\",\"license\":\"BUSL-1.1\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161139a38038061139a83398101604081905261002f91610068565b60008054600160a01b60ff60a01b19909116176001600160a01b0319166001600160a01b03929092169190911790556005600155610096565b600060208284031215610079578081fd5b81516001600160a01b038116811461008f578182fd5b9392505050565b6112f5806100a56000396000f3fe6080604052600436106100e05760003560e01c806354a5beda1161007f578063cbed8b9c11610059578063cbed8b9c14610224578063cf5d147114610244578063f2d566fc14610259578063f5ecbdbc14610279576100e7565b806354a5beda146101cb5780635e280f11146101ed5780636c7c091b1461020f576100e7565b80632f2770db116100bb5780632f2770db14610149578063315f7a7f1461015e5780633ba6107f1461018957806342d65a8d146101ab576100e7565b80621d3567146100e957806307e0db171461010957806310ddb13714610129576100e7565b366100e757005b005b3480156100f557600080fd5b506100e7610104366004610cc0565b6102a6565b34801561011557600080fd5b506100e7610124366004610bc4565b610304565b34801561013557600080fd5b506100e7610144366004610bc4565b61038f565b34801561015557600080fd5b506100e76103e5565b34801561016a57600080fd5b5061017361040f565b604051610180919061120f565b60405180910390f35b34801561019557600080fd5b5061019e610415565b6040516101809190610f03565b3480156101b757600080fd5b506100e76101c6366004610c40565b610436565b3480156101d757600080fd5b506101e061043b565b60405161018091906110bc565b3480156101f957600080fd5b506102026104e7565b6040516101809190610ee2565b34801561021b57600080fd5b50610173610503565b34801561023057600080fd5b506100e761023f366004610d9a565b610509565b34801561025057600080fd5b506101e0610612565b34801561026557600080fd5b506100e7610274366004610c03565b610669565b34801561028557600080fd5b50610299610294366004610d4c565b610994565b6040516101809190610f0e565b60005473ffffffffffffffffffffffffffffffffffffffff1633146102ca57600080fd5b601483015181516000906102e79084016020908101908501610df8565b600101600281905590506102fc868383610669565b505050505050565b6000546040517f07e0db1700000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff909116906307e0db179061035a9084906004016110bc565b600060405180830381600087803b15801561037457600080fd5b505af1158015610388573d6000803e3d6000fd5b5050505050565b6000546040517f10ddb13700000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff909116906310ddb1379061035a9084906004016110bc565b600080547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff169055565b60025481565b60005474010000000000000000000000000000000000000000900460ff1681565b505050565b600080546040517f096568f600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063096568f690610492903090600401610ee2565b60206040518083038186803b1580156104aa57600080fd5b505afa1580156104be573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104e29190610be7565b905090565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b6000546040517f096568f600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063cbed8b9c908590839063096568f690610569903090600401610ee2565b60206040518083038186803b15801561058157600080fd5b505afa158015610595573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105b99190610be7565b85856040518563ffffffff1660e01b81526004016105da94939291906111d8565b600060405180830381600087803b1580156105f457600080fd5b505af1158015610608573d6000803e3d6000fd5b5050505050505050565b600080546040517fda1a7c9a00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063da1a7c9a90610492903090600401610ee2565b600047116106ac576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a39061105e565b60405180910390fd5b60005474010000000000000000000000000000000000000000900460ff16610700576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610f21565b806001541161073b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610f7e565b7f48257dc961b6f792c2b78a080dacfed693b660960a702de21cee364e20270e2f8160405161076a919061120f565b60405180910390a1600081604051602001610785919061120f565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe081840301815290829052915060019062055730906000906107d19084908490602001610ead565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe081840301815290829052600080547f40a7bb100000000000000000000000000000000000000000000000000000000084529193509173ffffffffffffffffffffffffffffffffffffffff909116906340a7bb1090610860908b9030908a90879089906004016110cb565b604080518083038186803b15801561087757600080fd5b505afa15801561088b573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108af9190610e10565b509050804710156108ec576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610fdb565b60005460405173ffffffffffffffffffffffffffffffffffffffff9091169063c58031009083908b90610923908c90602001610e7d565b60405160208183030381529060405289306000896040518863ffffffff1660e01b81526004016109589695949392919061112a565b6000604051808303818588803b15801561097157600080fd5b505af1158015610985573d6000803e3d6000fd5b50505050505050505050505050565b6000546040517f096568f600000000000000000000000000000000000000000000000000000000815260609173ffffffffffffffffffffffffffffffffffffffff169063f5ecbdbc90829063096568f6906109f3903090600401610ee2565b60206040518083038186803b158015610a0b57600080fd5b505afa158015610a1f573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610a439190610be7565b8630866040518563ffffffff1660e01b8152600401610a65949392919061119e565b60006040518083038186803b158015610a7d57600080fd5b505afa158015610a91573d6000803e3d6000fd5b505050506040513d6000823e601f3d9081017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0168201604052610ad79190810190610b5a565b95945050505050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610b0457600080fd5b919050565b600082601f830112610b19578081fd5b8135610b2c610b278261123c565b611218565b818152846020838601011115610b40578283fd5b816020850160208301379081016020019190915292915050565b600060208284031215610b6b578081fd5b815167ffffffffffffffff811115610b81578182fd5b8201601f81018413610b91578182fd5b8051610b9f610b278261123c565b818152856020838501011115610bb3578384fd5b610ad782602083016020860161127c565b600060208284031215610bd5578081fd5b8135610be0816112ac565b9392505050565b600060208284031215610bf8578081fd5b8151610be0816112ac565b600080600060608486031215610c17578182fd5b8335610c22816112ac565b9250610c3060208501610ae0565b9150604084013590509250925092565b600080600060408486031215610c54578283fd5b8335610c5f816112ac565b9250602084013567ffffffffffffffff80821115610c7b578384fd5b818601915086601f830112610c8e578384fd5b813581811115610c9c578485fd5b876020828501011115610cad578485fd5b6020830194508093505050509250925092565b60008060008060808587031215610cd5578081fd5b8435610ce0816112ac565b9350602085013567ffffffffffffffff80821115610cfc578283fd5b610d0888838901610b09565b9450604087013591508082168214610d1e578283fd5b90925060608601359080821115610d33578283fd5b50610d4087828801610b09565b91505092959194509250565b60008060008060808587031215610d61578384fd5b8435610d6c816112ac565b93506020850135610d7c816112ac565b9250610d8a60408601610ae0565b9396929550929360600135925050565b60008060008060808587031215610daf578384fd5b8435610dba816112ac565b93506020850135610dca816112ac565b925060408501359150606085013567ffffffffffffffff811115610dec578182fd5b610d4087828801610b09565b600060208284031215610e09578081fd5b5051919050565b60008060408385031215610e22578182fd5b505080516020909101519092909150565b60008151808452610e4b81602086016020860161127c565b601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0169290920160200192915050565b60609190911b7fffffffffffffffffffffffffffffffffffffffff00000000000000000000000016815260140190565b60f09290921b7fffff000000000000000000000000000000000000000000000000000000000000168252600282015260220190565b73ffffffffffffffffffffffffffffffffffffffff91909116815260200190565b901515815260200190565b600060208252610be06020830184610e33565b60208082526027908201527f70696e6773456e61626c65642069732066616c73652e206d657373616765732060408201527f73746f7070656400000000000000000000000000000000000000000000000000606082015260800190565b6020808252602a908201527f6d617850696e677320686173206265656e20726561636865642c206e6f206d6f60408201527f7265206c6f6f70696e6700000000000000000000000000000000000000000000606082015260800190565b60208082526041908201527f616464726573732874686973292e62616c616e6365203c206d6573736167654660408201527f65652e20706c732073656e642067617320666f72206d6573736167652066656560608201527f7300000000000000000000000000000000000000000000000000000000000000608082015260a00190565b602080825260409082018190527f7468652062616c616e6365206f66207468697320636f6e747261637420697320908201527f302e20706c732073656e642067617320666f72206d6573736167652066656573606082015260800190565b61ffff91909116815260200190565b600061ffff8716825273ffffffffffffffffffffffffffffffffffffffff8616602083015260a0604083015261110460a0830186610e33565b8415156060840152828103608084015261111e8185610e33565b98975050505050505050565b600061ffff8816825260c0602083015261114760c0830188610e33565b82810360408401526111598188610e33565b73ffffffffffffffffffffffffffffffffffffffff87811660608601528616608085015283810360a085015290506111918185610e33565b9998505050505050505050565b61ffff948516815292909316602083015273ffffffffffffffffffffffffffffffffffffffff166040820152606081019190915260800190565b600061ffff8087168352808616602084015250836040830152608060608301526112056080830184610e33565b9695505050505050565b90815260200190565b60405181810167ffffffffffffffff8111828210171561123457fe5b604052919050565b600067ffffffffffffffff82111561125057fe5b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01660200190565b60005b8381101561129757818101518382015260200161127f565b838111156112a6576000848401525b50505050565b61ffff811681146112bc57600080fd5b5056fea26469706673582212202e6d6ccdb23b191dcf4572d2762f8618438085c602f7a3c085a615e042d3b05f64736f6c63430007060033",
+  "deployedBytecode": "0x6080604052600436106100e05760003560e01c806354a5beda1161007f578063cbed8b9c11610059578063cbed8b9c14610224578063cf5d147114610244578063f2d566fc14610259578063f5ecbdbc14610279576100e7565b806354a5beda146101cb5780635e280f11146101ed5780636c7c091b1461020f576100e7565b80632f2770db116100bb5780632f2770db14610149578063315f7a7f1461015e5780633ba6107f1461018957806342d65a8d146101ab576100e7565b80621d3567146100e957806307e0db171461010957806310ddb13714610129576100e7565b366100e757005b005b3480156100f557600080fd5b506100e7610104366004610cc0565b6102a6565b34801561011557600080fd5b506100e7610124366004610bc4565b610304565b34801561013557600080fd5b506100e7610144366004610bc4565b61038f565b34801561015557600080fd5b506100e76103e5565b34801561016a57600080fd5b5061017361040f565b604051610180919061120f565b60405180910390f35b34801561019557600080fd5b5061019e610415565b6040516101809190610f03565b3480156101b757600080fd5b506100e76101c6366004610c40565b610436565b3480156101d757600080fd5b506101e061043b565b60405161018091906110bc565b3480156101f957600080fd5b506102026104e7565b6040516101809190610ee2565b34801561021b57600080fd5b50610173610503565b34801561023057600080fd5b506100e761023f366004610d9a565b610509565b34801561025057600080fd5b506101e0610612565b34801561026557600080fd5b506100e7610274366004610c03565b610669565b34801561028557600080fd5b50610299610294366004610d4c565b610994565b6040516101809190610f0e565b60005473ffffffffffffffffffffffffffffffffffffffff1633146102ca57600080fd5b601483015181516000906102e79084016020908101908501610df8565b600101600281905590506102fc868383610669565b505050505050565b6000546040517f07e0db1700000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff909116906307e0db179061035a9084906004016110bc565b600060405180830381600087803b15801561037457600080fd5b505af1158015610388573d6000803e3d6000fd5b5050505050565b6000546040517f10ddb13700000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff909116906310ddb1379061035a9084906004016110bc565b600080547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff169055565b60025481565b60005474010000000000000000000000000000000000000000900460ff1681565b505050565b600080546040517f096568f600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063096568f690610492903090600401610ee2565b60206040518083038186803b1580156104aa57600080fd5b505afa1580156104be573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104e29190610be7565b905090565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b6000546040517f096568f600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063cbed8b9c908590839063096568f690610569903090600401610ee2565b60206040518083038186803b15801561058157600080fd5b505afa158015610595573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105b99190610be7565b85856040518563ffffffff1660e01b81526004016105da94939291906111d8565b600060405180830381600087803b1580156105f457600080fd5b505af1158015610608573d6000803e3d6000fd5b5050505050505050565b600080546040517fda1a7c9a00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9091169063da1a7c9a90610492903090600401610ee2565b600047116106ac576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a39061105e565b60405180910390fd5b60005474010000000000000000000000000000000000000000900460ff16610700576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610f21565b806001541161073b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610f7e565b7f48257dc961b6f792c2b78a080dacfed693b660960a702de21cee364e20270e2f8160405161076a919061120f565b60405180910390a1600081604051602001610785919061120f565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe081840301815290829052915060019062055730906000906107d19084908490602001610ead565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe081840301815290829052600080547f40a7bb100000000000000000000000000000000000000000000000000000000084529193509173ffffffffffffffffffffffffffffffffffffffff909116906340a7bb1090610860908b9030908a90879089906004016110cb565b604080518083038186803b15801561087757600080fd5b505afa15801561088b573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108af9190610e10565b509050804710156108ec576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016106a390610fdb565b60005460405173ffffffffffffffffffffffffffffffffffffffff9091169063c58031009083908b90610923908c90602001610e7d565b60405160208183030381529060405289306000896040518863ffffffff1660e01b81526004016109589695949392919061112a565b6000604051808303818588803b15801561097157600080fd5b505af1158015610985573d6000803e3d6000fd5b50505050505050505050505050565b6000546040517f096568f600000000000000000000000000000000000000000000000000000000815260609173ffffffffffffffffffffffffffffffffffffffff169063f5ecbdbc90829063096568f6906109f3903090600401610ee2565b60206040518083038186803b158015610a0b57600080fd5b505afa158015610a1f573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610a439190610be7565b8630866040518563ffffffff1660e01b8152600401610a65949392919061119e565b60006040518083038186803b158015610a7d57600080fd5b505afa158015610a91573d6000803e3d6000fd5b505050506040513d6000823e601f3d9081017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0168201604052610ad79190810190610b5a565b95945050505050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610b0457600080fd5b919050565b600082601f830112610b19578081fd5b8135610b2c610b278261123c565b611218565b818152846020838601011115610b40578283fd5b816020850160208301379081016020019190915292915050565b600060208284031215610b6b578081fd5b815167ffffffffffffffff811115610b81578182fd5b8201601f81018413610b91578182fd5b8051610b9f610b278261123c565b818152856020838501011115610bb3578384fd5b610ad782602083016020860161127c565b600060208284031215610bd5578081fd5b8135610be0816112ac565b9392505050565b600060208284031215610bf8578081fd5b8151610be0816112ac565b600080600060608486031215610c17578182fd5b8335610c22816112ac565b9250610c3060208501610ae0565b9150604084013590509250925092565b600080600060408486031215610c54578283fd5b8335610c5f816112ac565b9250602084013567ffffffffffffffff80821115610c7b578384fd5b818601915086601f830112610c8e578384fd5b813581811115610c9c578485fd5b876020828501011115610cad578485fd5b6020830194508093505050509250925092565b60008060008060808587031215610cd5578081fd5b8435610ce0816112ac565b9350602085013567ffffffffffffffff80821115610cfc578283fd5b610d0888838901610b09565b9450604087013591508082168214610d1e578283fd5b90925060608601359080821115610d33578283fd5b50610d4087828801610b09565b91505092959194509250565b60008060008060808587031215610d61578384fd5b8435610d6c816112ac565b93506020850135610d7c816112ac565b9250610d8a60408601610ae0565b9396929550929360600135925050565b60008060008060808587031215610daf578384fd5b8435610dba816112ac565b93506020850135610dca816112ac565b925060408501359150606085013567ffffffffffffffff811115610dec578182fd5b610d4087828801610b09565b600060208284031215610e09578081fd5b5051919050565b60008060408385031215610e22578182fd5b505080516020909101519092909150565b60008151808452610e4b81602086016020860161127c565b601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0169290920160200192915050565b60609190911b7fffffffffffffffffffffffffffffffffffffffff00000000000000000000000016815260140190565b60f09290921b7fffff000000000000000000000000000000000000000000000000000000000000168252600282015260220190565b73ffffffffffffffffffffffffffffffffffffffff91909116815260200190565b901515815260200190565b600060208252610be06020830184610e33565b60208082526027908201527f70696e6773456e61626c65642069732066616c73652e206d657373616765732060408201527f73746f7070656400000000000000000000000000000000000000000000000000606082015260800190565b6020808252602a908201527f6d617850696e677320686173206265656e20726561636865642c206e6f206d6f60408201527f7265206c6f6f70696e6700000000000000000000000000000000000000000000606082015260800190565b60208082526041908201527f616464726573732874686973292e62616c616e6365203c206d6573736167654660408201527f65652e20706c732073656e642067617320666f72206d6573736167652066656560608201527f7300000000000000000000000000000000000000000000000000000000000000608082015260a00190565b602080825260409082018190527f7468652062616c616e6365206f66207468697320636f6e747261637420697320908201527f302e20706c732073656e642067617320666f72206d6573736167652066656573606082015260800190565b61ffff91909116815260200190565b600061ffff8716825273ffffffffffffffffffffffffffffffffffffffff8616602083015260a0604083015261110460a0830186610e33565b8415156060840152828103608084015261111e8185610e33565b98975050505050505050565b600061ffff8816825260c0602083015261114760c0830188610e33565b82810360408401526111598188610e33565b73ffffffffffffffffffffffffffffffffffffffff87811660608601528616608085015283810360a085015290506111918185610e33565b9998505050505050505050565b61ffff948516815292909316602083015273ffffffffffffffffffffffffffffffffffffffff166040820152606081019190915260800190565b600061ffff8087168352808616602084015250836040830152608060608301526112056080830184610e33565b9695505050505050565b90815260200190565b60405181810167ffffffffffffffff8111828210171561123457fe5b604052919050565b600067ffffffffffffffff82111561125057fe5b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01660200190565b60005b8381101561129757818101518382015260200161127f565b838111156112a6576000848401525b50505050565b61ffff811681146112bc57600080fd5b5056fea26469706673582212202e6d6ccdb23b191dcf4572d2762f8618438085c602f7a3c085a615e042d3b05f64736f6c63430007060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 12843,
+        "contract": "contracts/mocks/PingPong.sol:PingPong",
+        "label": "endpoint",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(ILayerZeroEndpoint)11161"
+      },
+      {
+        "astId": 12845,
+        "contract": "contracts/mocks/PingPong.sol:PingPong",
+        "label": "pingsEnabled",
+        "offset": 20,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 12851,
+        "contract": "contracts/mocks/PingPong.sol:PingPong",
+        "label": "maxPings",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 12853,
+        "contract": "contracts/mocks/PingPong.sol:PingPong",
+        "label": "numPings",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(ILayerZeroEndpoint)11161": {
+        "encoding": "inplace",
+        "label": "contract ILayerZeroEndpoint",
+        "numberOfBytes": "20"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

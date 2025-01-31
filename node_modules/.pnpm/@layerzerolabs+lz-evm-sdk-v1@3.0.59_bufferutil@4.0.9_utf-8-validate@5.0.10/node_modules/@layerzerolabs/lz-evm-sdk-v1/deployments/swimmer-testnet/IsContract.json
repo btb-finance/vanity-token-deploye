@@ -1,0 +1,60 @@
+{
+  "address": "0xdf47CD0618f2280e025AfDdd5cC0aB9987279355",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "isAddressContract",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xd8b4643c5f9edfa688ab3738a870476f77e788465ee550eda9a8089b354d400c",
+  "receipt": {
+    "to": null,
+    "from": "0xc13b65f7c53Cd6db2EA205a4b574b4a0858720A6",
+    "contractAddress": "0xdf47CD0618f2280e025AfDdd5cC0aB9987279355",
+    "transactionIndex": 0,
+    "gasUsed": "90819",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfb9fb57dddb1ab3d8c6e5742c31f5dd30e1669103a6807b3110c212deed82c8c",
+    "transactionHash": "0xd8b4643c5f9edfa688ab3738a870476f77e788465ee550eda9a8089b354d400c",
+    "logs": [],
+    "blockNumber": 228494,
+    "cumulativeGasUsed": "90819",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "6aa4c5c759cc9c5cedb50cf12cec1892",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isAddressContract\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/IsContract.sol\":\"IsContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":30000},\"remappings\":[]},\"sources\":{\"contracts/mocks/IsContract.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity ^0.7.6;\\n\\ncontract IsContract {\\n    function isAddressContract(address addr) external view returns (bool) {\\n        // check if the toAddress is a contract. We are not concerned about addresses that pretend to be wallets. because worst case we just delete their payload if being malicious\\n        // we can guarantee that if a size > 0, then the contract is definitely a contract address in this context\\n        uint size;\\n        assembly {\\n            size := extcodesize(addr)\\n        }\\n        return size != 0;\\n    }\\n}\\n\",\"keccak256\":\"0x434dd5e7ac186e88dc29521723ec3f658faee5b84f5839a520934890a81ccf92\",\"license\":\"BUSL-1.1\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060ad8061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b5f9dc9114602d575b600080fd5b605d60048036036020811015604157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff166071565b604080519115158252519081900360200190f35b3b15159056fea2646970667358221220299b79343b119aec70a1bd02160ef1eeea823c6fcb470820b899f1797ef4451364736f6c63430007060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b5f9dc9114602d575b600080fd5b605d60048036036020811015604157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff166071565b604080519115158252519081900360200190f35b3b15159056fea2646970667358221220299b79343b119aec70a1bd02160ef1eeea823c6fcb470820b899f1797ef4451364736f6c63430007060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IUltraLightNode",
+  "sourceName": "contracts/proof/MPTValidatorV5.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_chainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "userApplicationAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getAppConfig",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "inboundProofLibraryVersion",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint64",
+              "name": "inboundBlockConfirmations",
+              "type": "uint64"
+            },
+            {
+              "internalType": "address",
+              "name": "relayer",
+              "type": "address"
+            },
+            {
+              "internalType": "uint16",
+              "name": "outboundProofType",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint64",
+              "name": "outboundBlockConfirmations",
+              "type": "uint64"
+            },
+            {
+              "internalType": "address",
+              "name": "oracle",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IUltraLightNode.ApplicationConfiguration",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_oracle",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_remoteChainId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_lookupHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getBlockHeaderData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "confirmations",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "data",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct IUltraLightNode.BlockData",
+          "name": "blockData",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

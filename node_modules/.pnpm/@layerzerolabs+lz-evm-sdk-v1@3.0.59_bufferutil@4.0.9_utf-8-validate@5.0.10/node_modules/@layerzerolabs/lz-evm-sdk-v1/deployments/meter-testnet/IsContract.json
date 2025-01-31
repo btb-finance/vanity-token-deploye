@@ -1,0 +1,73 @@
+{
+  "address": "0x7272e4bD8E02035aF8a7C984161a895eFde0307e",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "isAddressContract",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x088f13b7d10d3cc7e9cceafe2ed2009d84654f36a33b36ebc28263cc5f87ac7d",
+  "receipt": {
+    "to": null,
+    "from": "0xc13b65f7c53Cd6db2EA205a4b574b4a0858720A6",
+    "contractAddress": "0x7272e4bD8E02035aF8a7C984161a895eFde0307e",
+    "transactionIndex": 0,
+    "gasUsed": "100855",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x018613054bf28941f292400ffa19f430b831a01d009fa583b70efe226b2e651c",
+    "transactionHash": "0x088f13b7d10d3cc7e9cceafe2ed2009d84654f36a33b36ebc28263cc5f87ac7d",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 25563909,
+        "transactionHash": "0x088f13b7d10d3cc7e9cceafe2ed2009d84654f36a33b36ebc28263cc5f87ac7d",
+        "address": "0x7272e4bD8E02035aF8a7C984161a895eFde0307e",
+        "topics": [
+          "0xb35bf4274d4295009f1ec66ed3f579db287889444366c03d3a695539372e8951"
+        ],
+        "data": "0x000000000000000000000000c13b65f7c53cd6db2ea205a4b574b4a0858720a6",
+        "logIndex": 0,
+        "blockHash": "0x018613054bf28941f292400ffa19f430b831a01d009fa583b70efe226b2e651c"
+      }
+    ],
+    "blockNumber": 25563909,
+    "cumulativeGasUsed": "100855",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "fe90632293977325bd00121ea031c3fc",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isAddressContract\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/IsContract.sol\":\"IsContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":30000},\"remappings\":[]},\"sources\":{\"contracts/mocks/IsContract.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity ^0.7.6;\\n\\ncontract IsContract {\\n\\n    function isAddressContract(address addr) external view returns (bool) {\\n        // check if the toAddress is a contract. We are not concerned about addresses that pretend to be wallets. because worst case we just delete their payload if being malicious\\n        // we can guarantee that if a size > 0, then the contract is definitely a contract address in this context\\n        uint size;\\n        assembly {\\n            size := extcodesize(addr)\\n        }\\n        return size != 0;\\n    }\\n\\n}\\n\",\"keccak256\":\"0x645084d89f86d7869cbfe3466c2bb0a43e039965bfcf2d5ba3eeebc053327490\",\"license\":\"BUSL-1.1\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060ad8061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b5f9dc9114602d575b600080fd5b605d60048036036020811015604157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff166071565b604080519115158252519081900360200190f35b3b15159056fea2646970667358221220363832ae3e22852496343e3e812f3ee0e4710ce157a54331a13cc230e1e6bed364736f6c63430007060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b5f9dc9114602d575b600080fd5b605d60048036036020811015604157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff166071565b604080519115158252519081900360200190f35b3b15159056fea2646970667358221220363832ae3e22852496343e3e812f3ee0e4710ce157a54331a13cc230e1e6bed364736f6c63430007060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
