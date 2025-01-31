@@ -5,8 +5,8 @@ import { getNetworkNameForEid } from '@layerzerolabs/devtools-evm-hardhat'
 
 async function main() {
     // Contract addresses from deployments
-    const optimismSepoliaOFT = '0xA0c407153e986788834a78bC8f5eCE6b623a6D71'
-    const baseSepoliaOFT = '0x557AF300078659081084b55ec8e4201b246221F1'
+    const optimismSepoliaOFT = ''
+    const baseSepoliaOFT = ''
 
     // Get the signer
     const [signer] = await ethers.getSigners()
