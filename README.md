@@ -42,9 +42,7 @@ Set up deployer wallet/account:
 ```
 
 
-- Fund this address with the corresponding chain's native tokens you want to deploy to.
 
-To deploy your contracts to your desired blockchains, run the following command in your project's folder:
 
 ```bash
 npx hardhat lz:deploy
@@ -71,7 +69,7 @@ npx hardhat lz:oapp:config:init --contract-name [YOUR_CONTRACT_NAME] --oapp-conf
 ```
 
 > [!NOTE]
-> You may need to change the contract name if you're deploying multiple OApp contracts on different chains (e.g., OFT and OFT Adapter).
+> You may need to change the contract name if you're deploying multiple OFT contracts on different chains (e.g., OFT and OFT Adapter).
 
 <br>
 
