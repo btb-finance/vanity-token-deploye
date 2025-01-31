@@ -111,7 +111,7 @@ npx hardhat sendMessage --network optimism sepolia --dst-network base sepolia --
   Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
 </p>
 
-## Send Tokens from on network to another
+## Send Tokens from one network to another
 
 
 
