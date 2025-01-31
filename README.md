@@ -42,9 +42,13 @@ Set up deployer wallet/account:
 
 
 PRIVATE_KEY=""
+
 BASE_API_KEY=""
+
 OPTIMISM_API_KEY=""
+
 RPC_URL_BASE_SEPOLIA="https://sepolia.base.org"
+
 RPC_URL_OPTIMISM_SEPOLIA="https://sepolia.optimism.io"
 
 
