@@ -37,8 +37,7 @@ pnpm compile:hardhat
 Set up deployer wallet/account:
 
 - Rename `.env.example` -> `.env`
-- Choose your preferred means of setting up your deployer wallet/account:
-  Paste this in your .env and add your API keys
+- Paste this in your .env and add your API keys
 
 
 PRIVATE_KEY=""
