@@ -48,6 +48,12 @@ pnpm hardhat deploy --network op-sepolia
 ```bash
 pnpm hardhat deploy --network base-sepolia
 ```
+£. Verify contracts:
+```bash
+npx hardhat verify-contracts --network base-sepolia
+
+npx hardhat verify-contracts --network optimism-sepolia
+```
 
 ## Setting Up Cross-Chain Communication
 
