@@ -1,15 +1,14 @@
 import { EndpointId } from '@layerzerolabs/lz-definitions'
-
 import type { OAppOmniGraphHardhat, OmniPointHardhat } from '@layerzerolabs/toolbox-hardhat'
 
 const baseSepoliaContract: OmniPointHardhat = {
     eid: EndpointId.BASESEP_V2_TESTNET,
-    contractName: 'MyOFT',
+    contractName: 'BTBFinance',
 }
 
 const optimismSepoliaContract: OmniPointHardhat = {
     eid: EndpointId.OPTSEP_V2_TESTNET,
-    contractName: 'MyOFT',
+    contractName: 'BTBFinance',
 }
 
 const config: OAppOmniGraphHardhat = {
@@ -26,11 +25,10 @@ const config: OAppOmniGraphHardhat = {
             from: optimismSepoliaContract,
             to: baseSepoliaContract,
         },
-       
-            {
-                from: baseSepoliaContract,
-                to: optimismSepoliaContract,
-            },
+        {
+            from: baseSepoliaContract,
+            to: optimismSepoliaContract,
+        },
     ],
 }
 

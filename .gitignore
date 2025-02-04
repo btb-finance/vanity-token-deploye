@@ -1,0 +1,23 @@
+# Env files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Hardhat
+cache/
+artifacts/
+
+# Foundry
+cache/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store

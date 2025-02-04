@@ -1,0 +1,11 @@
+{
+  "vanity_B_B": {
+    "pattern": "B****B",
+    "privateKey": "0xb7f94b688d674bf7e56fc594488478e27f67a2c9e5a2befd4005b1995893b216",
+    "deployerAddress": "0x27EC2F0DE865dF71f1263d49515C006c77587B0b",
+    "contractAddress": "0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB",
+    "description": "Vanity contract address (starts with B and ends with B)",
+    "createdAt": "2025-02-04",
+    "generator": "scripts/findVanityAddressParallel.js"
+  }
+}

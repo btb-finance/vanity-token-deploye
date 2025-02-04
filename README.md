@@ -1,134 +1,124 @@
+# BTB Finance Token Deployer
 
-<h1 align="center">Omnichain Fungible Token (OFT)</h1>
+A project for deploying the BTB Finance token with vanity address generation and cross-chain functionality using LayerZero.
 
+## Features
 
+- Vanity address generation for contract deployment
+- Cross-chain token deployment on OP Sepolia and Base Sepolia
+- Fixed supply of 1 billion tokens (minted only on OP Sepolia)
+- LayerZero integration for cross-chain transfers
 
-## Developing Contracts
+## Prerequisites
 
-#### Installing dependencies
+- Node.js
+- pnpm
+- Hardhat
+- Forge (for contract development)
 
-We recommend using `pnpm` as a package manager (but you can of course use a package manager of your choice):
+## Installation
 
 ```bash
+# Install dependencies
 pnpm install
 ```
 
-#### Compiling your contracts
+## Configuration
 
-This project supports both `hardhat` and `forge` compilation. By default, the `compile` command will execute both:
-
+1. Create a `.env` file based on `.env.example`:
 ```bash
-pnpm compile
+cp .env.example .env
 ```
 
-If you prefer one over the other, you can use the tooling-specific commands:
-
-```bash
-pnpm compile:forge
-pnpm compile:hardhat
+2. Fill in the required environment variables:
+```env
+PRIVATE_KEY=your_private_key
+OPTIMISTIC_API_KEY=your_optimism_api_key
+BASESCAN_API_KEY=your_base_api_key
 ```
 
+## Contract Deployment
 
-
-
-
-## Deploying Contracts
-
-Set up deployer wallet/account:
-
-- Rename `.env.example` -> `.env`
-- Paste this in your .env and add your API keys
-
-
-PRIVATE_KEY=""
-
-BASE_API_KEY=""
-
-OPTIMISM_API_KEY=""
-
-RPC_URL_BASE_SEPOLIA="https://sepolia.base.org"
-
-RPC_URL_OPTIMISM_SEPOLIA="https://sepolia.optimism.io"
-
-
+1. Deploy to OP Sepolia (Main Chain):
 ```bash
-npx hardhat lz:deploy
+pnpm hardhat deploy --network op-sepolia
 ```
 
-More information about available CLI arguments can be found using the `--help` flag:
-
+2. Deploy to Base Sepolia:
 ```bash
-npx hardhat lz:deploy --help
+pnpm hardhat deploy --network base-sepolia
 ```
 
-By following these steps, you can focus more on creating innovative omnichain solutions and less on the complexities of cross-chain communication.
+## Setting Up Cross-Chain Communication
 
-<br></br>
+After deployment, set up peer information for cross-chain transfers:
 
-## Connecting Contracts
-
-### Ethereum Configurations
-
-Fill out your `layerzero.config.ts` with the contracts you want to connect. You can generate the default config file for your declared hardhat networks by running:
-
+1. Set peer on OP Sepolia:
 ```bash
-npx hardhat lz:oapp:config:init --contract-name [YOUR_CONTRACT_NAME] --oapp-config [CONFIG_NAME]
+pnpm hardhat run scripts/setPeer.ts --network op-sepolia
 ```
 
-> [!NOTE]
-> You may need to change the contract name if you're deploying multiple OFT contracts on different chains (e.g., OFT and OFT Adapter).
-
-<br>
-
-
-
-
+2. Set peer on Base Sepolia:
 ```bash
-npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
+pnpm hardhat run scripts/setPeer.ts --network base-sepolia
 ```
 
-<p align="center">
-  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
-</p>
+## Sending Tokens Cross-Chain
 
-## Send Msg
-
-
-
+Use the provided script to send tokens from OP Sepolia to Base Sepolia:
 
 ```bash
-npx hardhat sendMessage --network optimism sepolia --dst-network base sepolia --message "Hello Omnichain World (sent from OP)"
+pnpm hardhat run scripts/sendTokensScript.ts --network op-sepolia
 ```
 
-> [!NOTE]
-> You may need to change the contract name if you're deploying multiple OFT contracts on different chains (e.g., OFT and OFT Adapter).
+Check balances:
+```bash
+# Check OP Sepolia balance
+pnpm hardhat run scripts/checkBalance.ts --network op-sepolia
 
-<br>
+# Check Base Sepolia balance
+pnpm hardhat run scripts/checkBalanceBase.ts --network base-sepolia
+```
 
+## Vanity Address Generation
 
-
-<p align="center">
-  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
-</p>
-
-## Send Tokens from one network to another
-
-
-
+Generate a vanity address for contract deployment:
 
 ```bash
-npx hardhat run scripts/sendTokens.ts --network optimism-sepolia
+node scripts/findVanityAddressParallel.js
 ```
 
-> [!NOTE]
-> It will give a transaction on layerzeroscan-testnet check this hash on scan and wait 3 hours for complete the transaction from source to destination.
+This will search for an address starting with your desired prefix.
 
-<br>
+## Known Issues and TODOs
 
+1. Contract Verification
+   - Currently, verification on block explorers (Etherscan) is failing
+   - Issue: Constructor argument mismatch
+   - Workaround: Contracts are verified on Sourcify
 
+2. Test Script Improvements
+   - Add more comprehensive test coverage
+   - Include cross-chain transfer tests
+   - Add gas optimization tests
 
-<p align="center">
-  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
-</p>
+## Testing
 
+Run the test suite:
 
+```bash
+# Run Hardhat tests
+pnpm hardhat test
+
+# Run Forge tests
+forge test
+```
+
+## Contract Addresses
+
+- OP Sepolia: `0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB`
+- Base Sepolia: `0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB`
+
+## License
+
+MIT
