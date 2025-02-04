@@ -6,7 +6,7 @@ async function main() {
     // Contract addresses
     const optimismSepoliaOFT = '0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB'
     const baseSepoliaOFT = '0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB'
-
+/// nothing
     // Get the signer
     const [signer] = await ethers.getSigners()
 
