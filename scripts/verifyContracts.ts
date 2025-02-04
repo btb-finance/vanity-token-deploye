@@ -22,6 +22,7 @@ async function main() {
                 network: network.name,
                 contract: network.contractName,
             });
+            //ok
             console.log(`✅ ${network.contractName} verified successfully on ${network.name}`);
         } catch (error) {
             console.error(`❌ Failed to verify ${network.contractName} on ${network.name}:`);

@@ -6,7 +6,7 @@ task('verify-contracts', 'Verify contracts on block explorers')
     console.log('Starting contract verification...');
 
     const networks = ['base-sepolia', 'optimism-sepolia'];
-    
+    //ok
     // Get deployment information
     const getDeploymentInfo = async (network: string) => {
       try {
