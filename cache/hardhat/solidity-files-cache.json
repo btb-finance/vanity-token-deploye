@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/abc/CascadeProjects/vanity-token-deployer/contracts/BTBFinance.sol": {
-      "lastModificationDate": 1738646218229,
+    "/Users/macos/vanity-token-deployer/contracts/BTBFinance.sol": {
+      "lastModificationDate": 1738667233647,
       "contentHash": "411c11946d71a0c43dd73be6280df08b",
       "sourceName": "contracts/BTBFinance.sol",
       "solcConfig": {
@@ -47,8 +47,8 @@
         "BTBFinance"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/OFT.sol": {
-      "lastModificationDate": 1738646317394,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/OFT.sol": {
+      "lastModificationDate": 1738667305929,
       "contentHash": "d3478162b3e0baf2d1efac39c19ca535",
       "sourceName": "@layerzerolabs/oft-evm/contracts/OFT.sol",
       "solcConfig": {
@@ -93,8 +93,8 @@
         "OFT"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1738646317837,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1738667306793,
       "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -138,8 +138,8 @@
         "Ownable"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/OFTCore.sol": {
-      "lastModificationDate": 1738646317399,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/OFTCore.sol": {
+      "lastModificationDate": 1738667305941,
       "contentHash": "540b4efb87202cb9f0cf6ab0e4d1c426",
       "sourceName": "@layerzerolabs/oft-evm/contracts/OFTCore.sol",
       "solcConfig": {
@@ -190,8 +190,8 @@
         "OFTCore"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1738646317750,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1738667306421,
       "contentHash": "227a6eb2225701c12d9c959b758b6333",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -238,51 +238,8 @@
         "ERC20"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/libs/OFTMsgCodec.sol": {
-      "lastModificationDate": 1738646317401,
-      "contentHash": "721d3e26148a5d6794537302ed308863",
-      "sourceName": "@layerzerolabs/oft-evm/contracts/libs/OFTMsgCodec.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "OFTMsgCodec"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1738646317810,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1738667306534,
       "contentHash": "8f19f64d2adadf448840908bbaf431c8",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -324,51 +281,8 @@
         "IERC20"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/libs/OFTComposeMsgCodec.sol": {
-      "lastModificationDate": 1738646317398,
-      "contentHash": "f564a58fe800856f223a9dfc0f806d07",
-      "sourceName": "@layerzerolabs/oft-evm/contracts/libs/OFTComposeMsgCodec.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "OFTComposeMsgCodec"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/interfaces/IOFT.sol": {
-      "lastModificationDate": 1738646317389,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/interfaces/IOFT.sol": {
+      "lastModificationDate": 1738667305911,
       "contentHash": "35da653ffbbfbf5f8b04d87b67896722",
       "sourceName": "@layerzerolabs/oft-evm/contracts/interfaces/IOFT.sol",
       "solcConfig": {
@@ -412,10 +326,10 @@
         "IOFT"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/OAppPreCrimeSimulator.sol": {
-      "lastModificationDate": 1738646317542,
-      "contentHash": "d803f2d59e6fcf81c071239983389479",
-      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/OAppPreCrimeSimulator.sol",
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/libs/OFTComposeMsgCodec.sol": {
+      "lastModificationDate": 1738667305938,
+      "contentHash": "f564a58fe800856f223a9dfc0f806d07",
+      "sourceName": "@layerzerolabs/oft-evm/contracts/libs/OFTComposeMsgCodec.sol",
       "solcConfig": {
         "version": "0.8.22",
         "settings": {
@@ -447,20 +361,59 @@
           }
         }
       },
-      "imports": [
-        "@openzeppelin/contracts/access/Ownable.sol",
-        "./interfaces/IPreCrime.sol",
-        "./interfaces/IOAppPreCrimeSimulator.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.20"
       ],
       "artifacts": [
-        "OAppPreCrimeSimulator"
+        "OFTComposeMsgCodec"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol": {
-      "lastModificationDate": 1738646317540,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oft-evm@3.1.0_205e823e08b384b595d1daa04ec58d40/node_modules/@layerzerolabs/oft-evm/contracts/libs/OFTMsgCodec.sol": {
+      "lastModificationDate": 1738667305947,
+      "contentHash": "721d3e26148a5d6794537302ed308863",
+      "sourceName": "@layerzerolabs/oft-evm/contracts/libs/OFTMsgCodec.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OFTMsgCodec"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol": {
+      "lastModificationDate": 1738667306509,
       "contentHash": "5fff81a48e0699606f1ee7387d4a31a2",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
       "solcConfig": {
@@ -506,8 +459,55 @@
         "OApp"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/libs/OAppOptionsType3.sol": {
-      "lastModificationDate": 1738646317542,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/OAppPreCrimeSimulator.sol": {
+      "lastModificationDate": 1738667306523,
+      "contentHash": "d803f2d59e6fcf81c071239983389479",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/OAppPreCrimeSimulator.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IPreCrime.sol",
+        "./interfaces/IOAppPreCrimeSimulator.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OAppPreCrimeSimulator"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/libs/OAppOptionsType3.sol": {
+      "lastModificationDate": 1738667306520,
       "contentHash": "d7df5d5ca30b9eb573ed7d9b73dd8eda",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/libs/OAppOptionsType3.sol",
       "solcConfig": {
@@ -552,8 +552,8 @@
         "OAppOptionsType3"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppMsgInspector.sol": {
-      "lastModificationDate": 1738646317535,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppMsgInspector.sol": {
+      "lastModificationDate": 1738667306493,
       "contentHash": "863511afe66a3ac0c83b469e7ca6cfb4",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppMsgInspector.sol",
       "solcConfig": {
@@ -595,8 +595,8 @@
         "IOAppMsgInspector"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppSender.sol": {
-      "lastModificationDate": 1738646317551,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppSender.sol": {
+      "lastModificationDate": 1738667306527,
       "contentHash": "8a54c076d80f5711e3511a0bbfcff1a1",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppSender.sol",
       "solcConfig": {
@@ -642,8 +642,8 @@
         "OAppSender"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppCore.sol": {
-      "lastModificationDate": 1738646317541,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppCore.sol": {
+      "lastModificationDate": 1738667306514,
       "contentHash": "392cf9b920add3244966148ee8de682a",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppCore.sol",
       "solcConfig": {
@@ -688,8 +688,8 @@
         "OAppCore"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
-      "lastModificationDate": 1738646317848,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1738667306811,
       "contentHash": "b6c6348d1c4d3e890f8d8a885b2477c0",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
       "solcConfig": {
@@ -734,8 +734,8 @@
         "SafeERC20"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol": {
-      "lastModificationDate": 1738646317326,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol": {
+      "lastModificationDate": 1738667304143,
       "contentHash": "0790766778fa8995935c093d9cf03f84",
       "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
       "solcConfig": {
@@ -782,8 +782,8 @@
         "ILayerZeroEndpointV2"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppCore.sol": {
-      "lastModificationDate": 1738646317532,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppCore.sol": {
+      "lastModificationDate": 1738667306491,
       "contentHash": "f88e6ddf8ff977739a7178f0d1a276b3",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppCore.sol",
       "solcConfig": {
@@ -827,8 +827,8 @@
         "IOAppCore"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1738646317723,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1738667306380,
       "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -870,8 +870,8 @@
         "Context"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol": {
-      "lastModificationDate": 1738646317328,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol": {
+      "lastModificationDate": 1738667304147,
       "contentHash": "a56a887b2721a98cf82842503bbf0ef0",
       "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
       "solcConfig": {
@@ -913,51 +913,8 @@
         "IMessageLibManager"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol": {
-      "lastModificationDate": 1738646317330,
-      "contentHash": "bcc2df90697b23f02303892874f96324",
-      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.0"
-      ],
-      "artifacts": [
-        "IMessagingComposer"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol": {
-      "lastModificationDate": 1738646317329,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol": {
+      "lastModificationDate": 1738667304148,
       "contentHash": "bd92a8f1c9f815025e8e3e676fe40b0d",
       "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
       "solcConfig": {
@@ -999,8 +956,51 @@
         "IMessagingChannel"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol": {
-      "lastModificationDate": 1738646317330,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol": {
+      "lastModificationDate": 1738667304149,
+      "contentHash": "bcc2df90697b23f02303892874f96324",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessagingComposer"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol": {
+      "lastModificationDate": 1738667304150,
       "contentHash": "2b8bfa473f049af8c74dffbff0766abf",
       "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
       "solcConfig": {
@@ -1042,8 +1042,8 @@
         "IMessagingContext"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC1363.sol": {
-      "lastModificationDate": 1738646317801,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC1363.sol": {
+      "lastModificationDate": 1738667306524,
       "contentHash": "6b7c5ee7a59c981072a804c99ab0fac9",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC1363.sol",
       "solcConfig": {
@@ -1088,8 +1088,8 @@
         "IERC1363"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC20.sol": {
-      "lastModificationDate": 1738646317809,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1738667306533,
       "contentHash": "79af12d64eacc7d77b9ee2ac4b4d51ee",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC20.sol",
       "solcConfig": {
@@ -1131,8 +1131,8 @@
       ],
       "artifacts": []
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
-      "lastModificationDate": 1738646317804,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1738667306527,
       "contentHash": "f808b485ee0cdc6768ee8385ae5f9a2a",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC165.sol",
       "solcConfig": {
@@ -1174,8 +1174,8 @@
       ],
       "artifacts": []
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-      "lastModificationDate": 1738646317805,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1738667306528,
       "contentHash": "bf0119eb2a570f219729ff38b6cd1df8",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -1217,323 +1217,8 @@
         "IERC165"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol": {
-      "lastModificationDate": 1738646317537,
-      "contentHash": "acca130251942a833f49ab69e01bcd42",
-      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "../libs/Packet.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IOAppPreCrimeSimulator"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IPreCrime.sol": {
-      "lastModificationDate": 1738646317539,
-      "contentHash": "636408a0c09893cda2e9d23ceec10459",
-      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IPreCrime.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IPreCrime"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/libs/Packet.sol": {
-      "lastModificationDate": 1738646317557,
-      "contentHash": "49f5ad0a97a1acc3e81873e69b0ef3ab",
-      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/libs/Packet.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
-        "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "PacketDecoder"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol": {
-      "lastModificationDate": 1738646317335,
-      "contentHash": "fb446531f87e319bbe661e5d6845964f",
-      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "../../interfaces/ISendLib.sol",
-        "../../libs/AddressCast.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "PacketV1Codec"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol": {
-      "lastModificationDate": 1738646317330,
-      "contentHash": "2ed59a174607c55048374a27816752aa",
-      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./ILayerZeroEndpointV2.sol",
-        "./IMessageLib.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.0"
-      ],
-      "artifacts": [
-        "ISendLib"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol": {
-      "lastModificationDate": 1738646317331,
-      "contentHash": "4ede58e59ea7779e777942a5da252697",
-      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "AddressCast"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol": {
-      "lastModificationDate": 1738646317328,
-      "contentHash": "fa5082ec9a32dc00ab9dd5f759f3a756",
-      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
-        "./IMessageLibManager.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.0"
-      ],
-      "artifacts": [
-        "IMessageLib"
-      ]
-    },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppReceiver.sol": {
-      "lastModificationDate": 1738646317544,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppReceiver.sol": {
+      "lastModificationDate": 1738667306526,
       "contentHash": "3621393509939962dd64af436aa5d131",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppReceiver.sol",
       "solcConfig": {
@@ -1578,8 +1263,8 @@
         "OAppReceiver"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppReceiver.sol": {
-      "lastModificationDate": 1738646317538,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppReceiver.sol": {
+      "lastModificationDate": 1738667306497,
       "contentHash": "8744fbd8f6967b21443fddfccede3f1e",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppReceiver.sol",
       "solcConfig": {
@@ -1623,8 +1308,8 @@
         "IOAppReceiver"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@ope_3b570253b95e59e94beac4119cbeb6ea/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol": {
-      "lastModificationDate": 1738646317327,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol": {
+      "lastModificationDate": 1738667304144,
       "contentHash": "07bcbc5377578339628265a849de70f5",
       "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
       "solcConfig": {
@@ -1668,8 +1353,323 @@
         "ILayerZeroReceiver"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppOptionsType3.sol": {
-      "lastModificationDate": 1738646317536,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IPreCrime.sol": {
+      "lastModificationDate": 1738667306507,
+      "contentHash": "636408a0c09893cda2e9d23ceec10459",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IPreCrime.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IPreCrime"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol": {
+      "lastModificationDate": 1738667306496,
+      "contentHash": "acca130251942a833f49ab69e01bcd42",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libs/Packet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IOAppPreCrimeSimulator"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/precrime/libs/Packet.sol": {
+      "lastModificationDate": 1738667306531,
+      "contentHash": "49f5ad0a97a1acc3e81873e69b0ef3ab",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/precrime/libs/Packet.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PacketDecoder"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol": {
+      "lastModificationDate": 1738667304173,
+      "contentHash": "fb446531f87e319bbe661e5d6845964f",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/ISendLib.sol",
+        "../../libs/AddressCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PacketV1Codec"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol": {
+      "lastModificationDate": 1738667304153,
+      "contentHash": "4ede58e59ea7779e777942a5da252697",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AddressCast"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol": {
+      "lastModificationDate": 1738667304152,
+      "contentHash": "2ed59a174607c55048374a27816752aa",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ILayerZeroEndpointV2.sol",
+        "./IMessageLib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ISendLib"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+lz-evm-protocol-v2@3.0.59_@openzeppelin+contracts-upgradeable@5.2.0_@openzeppe_kwaou6635bogebkqltio2awmx4/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol": {
+      "lastModificationDate": 1738667304145,
+      "contentHash": "fa5082ec9a32dc00ab9dd5f759f3a756",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "./IMessageLibManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessageLib"
+      ]
+    },
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@layerzerolabs+oapp-evm@0.3.0_b58711d410e8129b444c2b54ec6a6962/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppOptionsType3.sol": {
+      "lastModificationDate": 1738667306495,
       "contentHash": "3b509d38279da870d798ed7039cfaf62",
       "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppOptionsType3.sol",
       "solcConfig": {
@@ -1711,8 +1711,8 @@
         "IOAppOptionsType3"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
-      "lastModificationDate": 1738646317728,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1738667306390,
       "contentHash": "267d92fe4de67b1bdb3302c08f387dbf",
       "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
       "solcConfig": {
@@ -1756,8 +1756,8 @@
         "IERC721Errors"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1738646317811,
+    "/Users/macos/vanity-token-deployer/node_modules/.pnpm/@openzeppelin+contracts@5.2.0/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1738667306542,
       "contentHash": "794db3115001aa372c79326fcfd44b1f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -1801,8 +1801,8 @@
         "IERC20Metadata"
       ]
     },
-    "/Users/abc/CascadeProjects/vanity-token-deployer/contracts/mocks/MyOFTMock.sol": {
-      "lastModificationDate": 1738646348625,
+    "/Users/macos/vanity-token-deployer/contracts/mocks/MyOFTMock.sol": {
+      "lastModificationDate": 1738667233648,
       "contentHash": "962ea8044b6e80df1c5874cb0c6e11ee",
       "sourceName": "contracts/mocks/MyOFTMock.sol",
       "solcConfig": {
