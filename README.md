@@ -1,130 +1,138 @@
 # BTB Finance Token Deployer
 
-A project for deploying the BTB Finance token with vanity address generation and cross-chain functionality using LayerZero.
+Deploy your BTB Finance token with a custom vanity address across multiple chains using LayerZero.
 
-## Features
+## Quick Start
 
-- Vanity address generation for contract deployment
-- Cross-chain token deployment on OP Sepolia and Base Sepolia
-- Fixed supply of 1 billion tokens (minted only on OP Sepolia)
-- LayerZero integration for cross-chain transfers
-
-## Prerequisites
-
-- Node.js
-- pnpm
-- Hardhat
-- Forge (for contract development)
-
-## Installation
-
+1. **Find Your Vanity Address**
 ```bash
-# Install dependencies
-pnpm install
+# Run the vanity address finder (replace BB with your desired prefix/suffix)
+node scripts/findVanityAddressParallel.js BB BB
+
+# Example output:
+# Found matching address!
+# Contract Address: 0xBB...BB
+# Deployer Address: 0x...
+# Private Key: 0x...
 ```
 
-## Configuration
-
-1. Create a `.env` file based on `.env.example`:
+2. **Set Up Environment**
 ```bash
+# Copy the private key from step 1
 cp .env.example .env
+
+# Add your private key to .env
+PRIVATE_KEY=your_private_key_from_step_1
 ```
 
-2. Fill in the required environment variables:
-```env
-PRIVATE_KEY=your_private_key
-OPTIMISTIC_API_KEY=your_optimism_api_key
-BASESCAN_API_KEY=your_base_api_key
-```
-
-## Contract Deployment
-
-1. Deploy to OP Sepolia (Main Chain):
+3. **Deploy Contracts**
 ```bash
-pnpm hardhat deploy --network op-sepolia
+# Make script executable
+chmod +x deploy-all.sh
+
+# Deploy to all chains
+./deploy-all.sh
 ```
 
-2. Deploy to Base Sepolia:
-```bash
-pnpm hardhat deploy --network base-sepolia
-```
-£. Verify contracts:
-```bash
-npx hardhat verify-contracts --network base-sepolia
+## Deployment Details
 
-npx hardhat verify-contracts --network optimism-sepolia
-```
+The contract will be deployed to:
+- Ethereum
+- Polygon
+- Arbitrum
+- Optimism (Main Chain - where tokens are minted)
+- Base
+- BNB Chain
+- Blast
+- World
+- Avalanche
+- Zora
 
-## Setting Up Cross-Chain Communication
-
-After deployment, set up peer information for cross-chain transfers:
-
-1. Set peer on OP Sepolia:
-```bash
-pnpm hardhat run scripts/setPeer.ts --network op-sepolia
-```
-
-2. Set peer on Base Sepolia:
-```bash
-pnpm hardhat run scripts/setPeer.ts --network base-sepolia
-```
-
-## Sending Tokens Cross-Chain
-
-Use the provided script to send tokens from OP Sepolia to Base Sepolia:
+## Vanity Address Generator Options
 
 ```bash
-pnpm hardhat run scripts/sendTokensScript.ts --network op-sepolia
+node scripts/findVanityAddressParallel.js <prefix> <suffix> [caseSensitive]
+
+# Examples:
+# Find address starting and ending with 'BB' (case insensitive)
+node scripts/findVanityAddressParallel.js BB BB
+
+# Find address starting with 'Aa' and ending with 'Zz' (case sensitive)
+node scripts/findVanityAddressParallel.js Aa Zz true
 ```
 
-Check balances:
+The script will:
+1. Generate addresses until it finds one matching your pattern
+2. Save the result to `vanity-addresses.json`
+3. Display the private key to use for deployment
+
+## Important Notes
+
+- **Save Your Private Key**: After finding your vanity address, immediately save the private key
+- **Funding**: Ensure your deployer address has enough native tokens on each chain
+- **Main Chain**: Optimism is set as the main chain where the initial token supply is minted
+- **Cross-Chain**: Use LayerZero's OFT features to transfer tokens between chains
+
+## Contract Features
+
+- Total Supply: 1 billion tokens
+- Minting: Only on Optimism (main chain)
+- Cross-Chain: LayerZero OFT integration for seamless transfers
+- Vanity: Custom contract address matching your pattern
+
+## Project Structure
+
+```
+├── contracts/          # Smart contracts
+│   └── BTBFinance.sol # Main token contract
+├── script/            # Deployment scripts
+│   └── DeployAll.s.sol
+├── scripts/           # Utility scripts
+│   └── findVanityAddressParallel.js
+└── deploy-all.sh      # Main deployment script
+```
+
+## Development
+
 ```bash
-# Check OP Sepolia balance
-pnpm hardhat run scripts/checkBalance.ts --network op-sepolia
+# Format code
+pnpm prettier
 
-# Check Base Sepolia balance
-pnpm hardhat run scripts/checkBalanceBase.ts --network base-sepolia
+# Type check
+pnpm typecheck
+
+# Run tests
+pnpm test
+
+# Build for production
+pnpm build
 ```
 
-## Vanity Address Generation
+## Troubleshooting
 
-Generate a vanity address for contract deployment:
+1. **Deployment Fails**
+   - Ensure you have enough native tokens on each chain
+   - Check RPC endpoints in `.env` file
+   - Try deploying to one chain at a time
 
-```bash
-node scripts/findVanityAddressParallel.js
-```
+2. **Vanity Address Issues**
+   - Try shorter patterns for faster results
+   - Use case-insensitive mode for more matches
+   - Check `vanity-addresses.json` for saved results
 
-This will search for an address starting with your desired prefix.
+3. **Cross-Chain Transfers**
+   - Wait for LayerZero confirmation
+   - Ensure destination chain has gas
 
-## Known Issues and TODOs
+## Security Notes
 
-1. Contract Verification
-   - Currently, verification on block explorers (Etherscan) is failing
-   - Issue: Constructor argument mismatch
-   - Workaround: Contracts are verified on Sourcify
+- Always keep your private key secure and never share it
+- Test the deployment on testnets first before deploying to mainnet
+- Ensure you have enough native tokens on each chain for deployment
+- Use TypeScript's type system to catch potential errors early
 
-2. Test Script Improvements
-   - Add more comprehensive test coverage
-   - Include cross-chain transfer tests
-   - Add gas optimization tests
+## Support
 
-## Testing
-
-Run the test suite:
-
-```bash
-# Run Hardhat tests
-pnpm hardhat test
-
-# Run Forge tests
-forge test
-```
-
-## Contract Addresses
-
-- OP Sepolia: `0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB`
-- Base Sepolia: `0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB`
-
-## License
-
-MIT
+For issues or questions:
+1. Check the troubleshooting section
+2. Open an issue in this repository
