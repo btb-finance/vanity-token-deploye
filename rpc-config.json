@@ -1,0 +1,91 @@
+{
+    "ethereum": [
+        "https://mainnet.gateway.tenderly.co",
+        "https://rpc.lokibuilder.xyz/wallet",
+        "https://uk.rpc.blxrbdn.com",
+        "https://rpc.payload.de",
+        "https://rpc.mevblocker.io",
+        "https://rpc.mevblocker.io/noreverts",
+        "https://rpc.mevblocker.io/fast",
+        "https://eth.merkle.io",
+        "https://eth.llamarpc.com"
+    ],
+    "polygon": [
+        "https://rpc.ankr.com/polygon",
+        "https://polygon-rpc.com",
+        "https://polygon.rpc.subquery.network/public",
+        "https://polygon-bor-rpc.publicnode.com",
+        "https://polygon.drpc.org",
+        "https://polygon.meowrpc.com",
+        "https://polygon.llamarpc.com",
+        "https://rpc-mainnet.matic.quiknode.pro",
+        "https://1rpc.io/matic"
+    ],
+    "arbitrum": [
+        "https://arbitrum.meowrpc.com",
+        "https://arbitrum.llamarpc.com",
+        "https://arbitrum.blockpi.network/v1/rpc/public",
+        "https://rpc.ankr.com/arbitrum",
+        "https://api.zan.top/arb-one"
+    ],
+    "optimism": [
+        "https://op-pokt.nodies.app",
+        "https://optimism.rpc.subquery.network/public",
+        "https://optimism.blockpi.network/v1/rpc/public",
+        "https://rpc.ankr.com/optimism",
+        "https://mainnet.optimism.io",
+        "https://optimism.drpc.org",
+        "https://optimism.meowrpc.com",
+        "https://optimism.lava.build",
+        "https://optimism.llamarpc.com"
+    ],
+    "base": [
+        "https://base-mainnet.public.blastapi.io",
+        "https://base.meowrpc.com",
+        "https://base-pokt.nodies.app",
+        "https://base.lava.build",
+        "https://base.api.onfinality.io/public",
+        "https://base-rpc.publicnode.com",
+        "https://base.rpc.subquery.network/public",
+        "https://developer-access-mainnet.base.org",
+        "https://base.llamarpc.com"
+    ],
+    "bnb": [
+        "https://rpc.ankr.com/bsc",
+        "https://rpc-bsc.48.club",
+        "https://bsc.meowrpc.com",
+        "https://bsc.blockrazor.xyz",
+        "https://endpoints.omniatech.io/v1/bsc/mainnet/public",
+        "https://1rpc.io/bnb",
+        "https://bsc-dataseed.bnbchain.org",
+        "https://bsc-dataseed1.bnbchain.org",
+        "https://bsc-dataseed2.bnbchain.org"
+    ],
+    "blast": [
+        "https://blast-rpc.publicnode.com",
+        "https://blastl2-mainnet.public.blastapi.io",
+        "https://endpoints.omniatech.io/v1/blast/mainnet/public",
+        "https://blast.gateway.tenderly.co",
+        "https://blast.drpc.org",
+        "https://rpc.owlracle.info/blast/70d38ce1826c4a60bb2a8e05a6c8b20f"
+    ],
+    "avalanche": [
+        "https://ava-mainnet.public.blastapi.io/ext/bc/C/rpc",
+        "https://avax.meowrpc.com",
+        "https://avalanche-c-chain-rpc.publicnode.com",
+        "https://avalanche.drpc.org",
+        "https://api.avax.network/ext/bc/C/rpc",
+        "https://avax-pokt.nodies.app/ext/bc/C/rpc"
+    ],
+    "zora": [
+        "https://rpc.zora.energy",
+        "https://zora.drpc.org"
+    ],
+    "world": [
+        "https://worldchain.drpc.org",
+        "https://sparkling-autumn-dinghy.worldchain-mainnet.quiknode.pro",
+        "https://worldchain-mainnet.g.alchemy.com/public",
+        "https://worldchain-mainnet.gateway.tenderly.co",
+        "https://480.rpc.thirdweb.com"
+    ]
+}
