@@ -16,5 +16,14 @@
     "description": "Vanity contract address (starts with a and ends with c)",
     "createdAt": "2025-02-04",
     "generator": "scripts/findVanityAddressParallel.js"
+  },
+  "vanity_B2B_B": {
+    "pattern": "B2B****B",
+    "privateKey": "0xe990f2216545e2dc0ff6c96b67ba3496f782fb22fcbc162beba03c7888af7222",
+    "deployerAddress": "0xDC5a4ee6CD6e938467dccDDe580064ECB59369d1",
+    "contractAddress": "0xB2B0FB1B2E71DD274EEAb7a6aC863C7bD678b2FB",
+    "description": "Vanity contract address (starts with B2B and ends with B)",
+    "createdAt": "2025-02-06",
+    "generator": "scripts/findVanityAddressParallel.js"
   }
 }
