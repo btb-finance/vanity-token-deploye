@@ -1,25 +1,23 @@
-node_modules
+# Env files
 .env
-coverage
-coverage.json
-typechain
-typechain-types
-.DS_Store
+.env.*
+!.env.example
 
-# Hardhat files
-cache
-artifacts
+# Dependencies
+node_modules/
 
-# Deployment files with sensitive info
-vanity-addresses.json
-deployments.json
+# Hardhat
+cache/
+artifacts/
 
-# IDE files
-.idea
-.vscode
+# Foundry
+cache/
+out/
 
-# Debug logs
+# IDE
+.vscode/
+.idea/
+
+# Misc
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.DS_Store
