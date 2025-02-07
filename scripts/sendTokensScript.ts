@@ -1,62 +1,96 @@
-import { ethers } from 'hardhat'
-import { EndpointId } from '@layerzerolabs/lz-definitions'
+import { ethers } from 'ethers'
 import { addressToBytes32, Options } from '@layerzerolabs/lz-v2-utilities'
+import * as dotenv from 'dotenv'
+
+dotenv.config()
+
+interface TransactionError extends Error {
+    transaction?: ethers.providers.TransactionRequest;
+}
 
 async function main() {
-    // Contract addresses
-    const optimismSepoliaOFT = '0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB'
-    const baseSepoliaOFT = '0xB1ca5c3c195EB86956e369011f65B3A7B6E444BB'
-/// nothing
-    // Get the signer
-    const [signer] = await ethers.getSigners()
+    // Connect to Optimism network
+    const provider = new ethers.providers.JsonRpcProvider(process.env.OPTIMISM_RPC)
+    const wallet = new ethers.Wallet(process.env.PRIVATE_KEY!, provider)
+
+    // Contract addresses and configuration
+    const btbContractAddress = '0xBBF88F780072F5141dE94E0A711bD2ad2c1f83BB'
+
+    // Contract ABI - only including necessary functions
+    const abi = [
+        'function balanceOf(address) view returns (uint256)',
+        'function decimals() view returns (uint8)',
+        'function quoteSend(tuple(uint32 dstEid, bytes32 to, uint256 amountLD, uint256 minAmountLD, bytes extraOptions, bytes composeMsg, bytes oftCmd), bool) view returns (tuple(uint256 nativeFee, uint256 lzTokenFee))',
+        'function send(tuple(uint32 dstEid, bytes32 to, uint256 amountLD, uint256 minAmountLD, bytes extraOptions, bytes composeMsg, bytes oftCmd), tuple(uint256 nativeFee, uint256 lzTokenFee), address payable) payable returns (bytes32)'
+    ]
 
     // Connect to the contract
-    const BTBFinance = await ethers.getContractFactory('BTBFinance')
-    const btbContract = BTBFinance.attach(optimismSepoliaOFT).connect(signer)
+    const btbContract = new ethers.Contract(btbContractAddress, abi, wallet)
 
-    // Get token decimals and prepare amount
+    // Check balances
     const decimals = await btbContract.decimals()
-    const amount = ethers.utils.parseUnits('1.0', decimals)
+    const btbBalance = await btbContract.balanceOf(wallet.address)
+    const ethBalance = await wallet.getBalance()
 
-    // Prepare send parameters
-    const sendParam = {
-        dstEid: EndpointId.BASESEP_V2_TESTNET,
-        to: addressToBytes32(baseSepoliaOFT),
-        amountLD: amount,
-        minAmountLD: amount,
-        extraOptions: Options.newOptions().addExecutorLzReceiveOption(200000, 0).toBytes(),
-        composeMsg: ethers.utils.arrayify('0x'),
-        oftCmd: ethers.utils.arrayify('0x')
-    }
+    console.log('Connected to BTB contract on Optimism')
+    console.log(`Your BTB balance: ${ethers.utils.formatUnits(btbBalance, decimals)}`)
+    console.log(`Your ETH balance: ${ethers.utils.formatEther(ethBalance)}`)
 
-    // Get the quote for the send operation
-    console.log('Getting quote...')
-    const feeQuote = await btbContract.quoteSend(sendParam, false)
-    const nativeFee = feeQuote.nativeFee
+    // Amount to send (500 tokens)
+    const amountToSend = ethers.utils.parseUnits('500', decimals)
 
-    console.log(`Sending 1.0 token(s) to Base Sepolia`)
-    console.log(`Native fee required: ${ethers.utils.formatEther(nativeFee)} ETH`)
+    // Base chain configuration
+    const baseChainId = 30184
+    console.log(`\nSending 500 BTB to Base...`)
+    console.log(`Chain EID: ${baseChainId}`)
 
-    // Send tokens
-    const tx = await btbContract.send(
-        sendParam,
-        {
-            nativeFee,
-            lzTokenFee: ethers.BigNumber.from(0)
-        },
-        signer.address,
-        {
-            gasLimit: 300000,
-            gasPrice: ethers.utils.parseUnits('20', 'gwei'),
-            value: nativeFee
+    try {
+        // Prepare send parameters with proper formatting
+        const sendParam = {
+            dstEid: baseChainId,
+            to: addressToBytes32(wallet.address),
+            amountLD: amountToSend,
+            minAmountLD: amountToSend,
+            extraOptions: Options.newOptions().addExecutorLzReceiveOption(200000, 0).toBytes(),
+            composeMsg: '0x',
+            oftCmd: '0x'
         }
-    )
 
-    console.log('Transaction hash:', tx.hash)
-    console.log('Waiting for transaction confirmation...')
-    await tx.wait()
-    console.log('Transaction confirmed!')
-    console.log(`See: https://layerzeroscan.com/tx/${tx.hash}`)
+        // Get quote for the send operation
+        console.log('Getting quote...')
+        const feeQuote = await btbContract.quoteSend(sendParam, false)
+        const nativeFee = feeQuote.nativeFee
+
+        console.log(`Native fee required: ${ethers.utils.formatEther(nativeFee)} ETH`)
+
+        // Send tokens with proper overrides
+        const tx = await btbContract.send(
+            sendParam,
+            {
+                nativeFee,
+                lzTokenFee: ethers.BigNumber.from(0)
+            },
+            wallet.address,
+            {
+                gasLimit: 300000,
+                value: nativeFee
+            }
+        )
+
+        console.log('Transaction hash:', tx.hash)
+        console.log('Waiting for transaction confirmation...')
+        await tx.wait()
+        console.log('Transaction confirmed!')
+        console.log(`See: https://layerzeroscan.com/tx/${tx.hash}`)
+
+    } catch (error) {
+        console.error(`Error sending to Base:`, error)
+        const txError = error as TransactionError
+        if (txError.transaction) {
+            console.log('Transaction data:', txError.transaction)
+        }
+        throw error
+    }
 }
 
 main().catch((error) => {
